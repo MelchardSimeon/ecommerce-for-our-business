@@ -1,0 +1,11 @@
+* {
+    font-family: 'raleway', sans-serif;
+}
+
+#search-button {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer
+}
