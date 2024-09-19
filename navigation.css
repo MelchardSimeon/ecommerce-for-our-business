@@ -6,5 +6,17 @@
     display: flex;
     list-style-type: none;
     justify-content: center;
-    gap: 50px;
+    gap: 100px;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.linkz {
+    font-size: 18px;
+}
+
+.linkz:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
