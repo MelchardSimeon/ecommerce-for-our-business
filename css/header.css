@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+}
+
 #search-button {
     padding: 0;
     border: none;
@@ -28,15 +32,18 @@
 }
 
 .header-wrapper {
-    /* background-color: #fffcef;  */ background-color: #ffefec;
+    background-color: #ffefec;
     padding: 50px 0;
+    z-index: 1000;
 }
 
 .header-left {
     margin-left: 50px;
+    position: relative;
 }
 
 .header-right {
+    display: flex;
     margin-right: 50px;
 }
 
@@ -44,3 +51,9 @@
     margin-left: 20px;
 }
 
+
+@media(max-width: 768px) {
+    #search-button {
+        display: none;
+    }
+}
