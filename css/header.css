@@ -32,9 +32,9 @@ body {
 }
 
 .header-wrapper {
-    background-color: #ffefec;
     padding: 50px 0;
     z-index: 1000;
+    background-color: #ffefec;
 }
 
 .header-left {

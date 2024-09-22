@@ -3,14 +3,20 @@
 // Get elements
 const openSidebar = document.querySelector('.open-sidebar');
 const closeSidebar = document.querySelector('.close-sidebar');
-const navigationLinks = document.querySelector('.navigation-links');
+const sidebarMenu = document.querySelector('.sidebar-menu');
+
+
 
 // Function to open the sidebar
 openSidebar.addEventListener('click', () => {
-    navigationLinks.style.display = 'flex'; // Show the sidebar
-});
+    if (sidebarMenu.style.display === 'flex') {
+        sidebarMenu.style.display = 'none'
+    } else {
+        sidebarMenu.style.display = 'flex'
+    } //show the sidebar
+})
 
 // Function to close the sidebar
 closeSidebar.addEventListener('click', () => {
-    navigationLinks.style.display = 'none'; // Hide the sidebar
+    sidebarMenu.style.display = 'none'; // Hide the sidebar
 });

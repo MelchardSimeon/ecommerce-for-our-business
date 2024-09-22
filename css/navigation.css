@@ -45,20 +45,19 @@ a {
 
 .sidebar-menu {
     list-style-type: none;
-    background-color: white;
     position: fixed;
-    top: 0;
+    left: 0;
     height: 100vh;
-    width: 40vw;
-    z-index: 1000;
-    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    width: 70vw;
+    z-index: 999;
+    background-color: white;
     display: none;
     flex-direction: column;
-    align-items: start;
+    padding: 30px;
     justify-content: flex-start;
-    gap: 5px;
+    align-items: flex-start;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1)
 }
-
 
 .open-sidebar, .close-sidebar {
     display: none;
@@ -67,7 +66,11 @@ a {
 
 @media(max-width: 768px) {
     .navigation-links {
-        display: flex;
+        display: none;
+    }
+    
+    .sidebar-menu {
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         padding-left: 30px;
@@ -78,6 +81,11 @@ a {
         position: fixed;
         left: 0;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        gap: 30px;
+    }
+
+    .sidebar-links {
+        margin-bottom: 20px;
     }
 
     .open-sidebar, .close-sidebar {
