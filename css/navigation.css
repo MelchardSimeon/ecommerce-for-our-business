@@ -70,7 +70,7 @@ a {
     }
     
     .sidebar-menu {
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding-left: 30px;
@@ -83,6 +83,9 @@ a {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         gap: 30px;
         z-index: 999;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .sidebar-menu li {
@@ -103,6 +106,8 @@ a {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.1);
         z-index: 998;
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
 }
 
