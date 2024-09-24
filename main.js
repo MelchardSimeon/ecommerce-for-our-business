@@ -106,7 +106,7 @@ function prevImage() {
 }
 
 function startAutoSlide() {
-    autoSlideInterval = setInterval(nextImage, 4000)
+    autoSlideInterval = setInterval(nextImage, 5000)
 }
 
 function stopAutoSlide() {
@@ -128,3 +128,6 @@ prevBtn.addEventListener('click', () => {
 
 showImage(currentIndex);
 startAutoSlide();
+
+
+// THE CODE BELOW ADDS AN ANIMATION IN THE HEADER

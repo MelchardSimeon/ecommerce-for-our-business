@@ -1,0 +1,9 @@
+.product-collections {
+    font-family: "cormorant", serif;
+}
+
+.onepiece-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
