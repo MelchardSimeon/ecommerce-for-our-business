@@ -95,6 +95,7 @@ a {
 
     .open-sidebar{
         display: flex;
+        cursor: pointer;
     }
 
     .overlay {

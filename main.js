@@ -70,3 +70,55 @@ overlay.addEventListener('click', () => {
         overlay.style.opacity = '0'
     }, 300)
 })
+
+
+// THE JAVASCRIPT CODE BELOW IS FOR THE CAROUSEL FEATURE 
+
+const carouselImages = document.querySelectorAll('.carousel-image')
+const prevBtn = document.querySelector('.prev-button')
+const nextBtn = document.querySelector('.next-button')
+
+let currentIndex = 0;
+let autoSlideInterval;
+
+function showImage(index) {
+    carouselImages.forEach((img, i) => {
+        img.classList.remove('active')
+    })
+
+    carouselImages[index].classList.add('active')
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % carouselImages.length
+    showImage(currentIndex)
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length
+    showImage(currentIndex)
+}
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(nextImage, 4000)
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval)
+}
+
+nextBtn.addEventListener('click', () => {
+    stopAutoSlide()
+    nextImage()
+    startAutoSlide()
+})
+
+prevBtn.addEventListener('click', () => {
+    stopAutoSlide()
+    prevImage()
+    startAutoSlide()
+})
+
+
+showImage(currentIndex);
+startAutoSlide();
