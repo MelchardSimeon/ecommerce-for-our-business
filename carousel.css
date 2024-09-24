@@ -10,21 +10,22 @@
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-image {
-    min-width: 100%;
     display: none;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    min-width: 100%;
+    opacity: 0;
+    transform: translateX(-100%);
     object-fit: cover;
     aspect-ratio: 16 / 9;
+    transition: opacity 1s ease-in-out, transform 1s ease;
 }
 
 .carousel-image.active {
     display: block;
     opacity: 1;
+    transform: translateX(0);
 }
 
 .carousel-navigations {
@@ -34,11 +35,6 @@
     display: flex;
     justify-content: space-between;
     gap: 5px;
-    /* top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%); */
 }
 
 .carousel-navigations button {

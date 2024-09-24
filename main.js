@@ -84,9 +84,15 @@ let autoSlideInterval;
 function showImage(index) {
     carouselImages.forEach((img, i) => {
         img.classList.remove('active')
+        img.style.display = 'none'
     })
 
+    carouselImages[index].style.display = 'block'
+
+    setTimeout(() => {
     carouselImages[index].classList.add('active')
+    }, 20)
+    
 }
 
 function nextImage() {
