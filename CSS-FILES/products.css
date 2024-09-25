@@ -38,9 +38,6 @@
     transform: scale(1.05);
 }
 
-/* .fourseason-products {
-    margin-top: 10rem;
-} */
 
 .fourseasons-grid {
     display: grid;
@@ -86,6 +83,22 @@
 
 .passion-felicity-sets {
     transition: transform 0.3s;
+}
+
+
+/* The code below is for the scroll into view animation  */
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s, transform 0.5s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 
