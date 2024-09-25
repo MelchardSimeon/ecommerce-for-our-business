@@ -1,0 +1,39 @@
+.footer {
+}
+
+.instagram-icon {
+    background: linear-gradient(45deg, rgb(131, 58, 180), rgb(193, 53, 132), rgb(253, 29, 29), rgb(252, 176, 69));
+}
+
+.footer-content {
+    display: flex;
+    background-color: #e7d7e3;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0.6rem;
+    min-width: 12.5rem;
+}
+
+.footer-section h2 {
+    margin-bottom: 0.6rem;
+}
+
+.footer-section p, .footer-section a {
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
