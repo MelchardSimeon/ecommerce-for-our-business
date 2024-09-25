@@ -1,15 +1,5 @@
-* {
-    font-size: 18px;
-    font-weight: 500;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'raleway', sans-serif;
-    min-height: 100vh;
-}
+
 
 #search-button {
     padding: 0;
