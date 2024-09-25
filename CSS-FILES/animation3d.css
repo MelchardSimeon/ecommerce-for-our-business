@@ -50,10 +50,11 @@
 @media (max-width: 768px) {
     .animation-3d {
         height: 60vh;
+        margin-bottom: 2rem;
     }
 
     .animation-3d h2 {
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
 
     .banner {
