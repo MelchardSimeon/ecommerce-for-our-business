@@ -2,7 +2,6 @@
 
 .animation-3d {
     height: 100vh;
-    margin: 1vh 0;
 }
 
 .banner {
@@ -49,6 +48,13 @@
 }
 
 @media (max-width: 768px) {
+    .animation-3d {
+        height: 70vh;
+    }
+
+    .banner {
+        height: 70vh;
+    }
 
     .banner .slider {
         width: 10rem;
