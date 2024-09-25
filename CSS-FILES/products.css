@@ -1,7 +1,17 @@
 .product-container {
     font-family: "cormorant", serif;
-    padding: 3rem 1rem;
+    padding: 3rem 1.5rem;
     background-color: #f9f9f9;
+    text-align: center;
+}
+
+#price {
+    font-family: 'raleway', sans-serif;
+    font-size: 1rem;
+}
+
+.product-container img {
+    width: 100%;
 }
 
 .product-container h2 {
@@ -10,32 +20,40 @@
     margin-bottom: 3rem;
 }
 
-.product-grid {
+.onepiece-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .onepiece-sets {
     transition: transform 0.3s;
-    text-align: center;
-}
-
-.onepiece-sets img {
-    width: 100%;
-}
-
-#price {
-    font-family: 'raleway', sans-serif;
-    font-size: 1rem;
 }
 
 .onepiece-sets:hover {
     transform: scale(1.05);
 }
 
+.fourseason-products {
+    padding-top: 4rem;
+}
+
+.fourseasons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.four-seasons:hover {
+    transform: scale(1.05);
+}
+
+.four-seasons {
+    transition: transform 0.3s;
+}
+
 @media (max-width: 768px) {
-    .product-grid {
+    .onepiece-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
