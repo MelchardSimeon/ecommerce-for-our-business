@@ -2,10 +2,13 @@
 
 .animation-3d {
     height: 100vh;
-    margin: 10vh 0;
+    margin: 1vh 0;
 }
 
 .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -18,8 +21,8 @@
     position: absolute;
     width: 12.5rem;
     height: 15.6rem;
-    top: 30%;
-    left: 40%;
+    /* top: 10%; */
+    /* left: calc(50% - 100px); */
     transform-style: preserve-3d;
     animation: autoRun 20s linear infinite;
 }
@@ -43,4 +46,29 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+    .banner .slider {
+        width: 10rem;
+        height: 12.5rem;
+    }
+
+    .banner .slider .item {
+        transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(250px);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner .slider {
+        width: 8rem;
+        height: 12rem;
+    }
+
+    .banner .slider .item {
+        transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(150px);
+    }
+    
 }
