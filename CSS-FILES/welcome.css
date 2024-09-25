@@ -1,0 +1,21 @@
+
+
+.welcome-section {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.welcome-section h2 {
+    font-size: 2rem;
+    font-family: 'cormorant', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.welcome-section p span {
+    line-height: 1.5rem;
+    font-family: 'raleway', sans-serif;
+    font-weight: 400;
+}
