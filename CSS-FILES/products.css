@@ -1,10 +1,43 @@
-.product-collections {
+.product-container {
     font-family: "cormorant", serif;
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
 }
 
-.onepiece-header {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+.product-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.onepiece-sets {
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.onepiece-sets img {
+    width: 100%;
+}
+
+#price {
+    font-family: 'raleway', sans-serif;
+    font-size: 1rem;
+}
+
+.onepiece-sets:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
