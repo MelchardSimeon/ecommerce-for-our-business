@@ -1,23 +1,27 @@
 .product-container {
     font-family: "cormorant", serif;
-    padding: 3rem 1.5rem;
+    padding: 3rem 0.5rem;
     background-color: #f9f9f9;
     text-align: center;
 }
 
 #price {
     font-family: 'raleway', sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .product-container img {
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .product-container h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 8rem;
 }
 
 .onepiece-grid {
@@ -34,14 +38,14 @@
     transform: scale(1.05);
 }
 
-.fourseason-products {
-    padding-top: 4rem;
-}
+/* .fourseason-products {
+    margin-top: 10rem;
+} */
 
 .fourseasons-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .four-seasons:hover {
@@ -52,10 +56,56 @@
     transition: transform 0.3s;
 }
 
+/* .random-products {
+    margin-top: 10rem;
+} */
+
+.randomproducts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.random-sets:hover {
+    transform: scale(1.05);
+}
+
+.random-sets {
+    transition: transform 0.3s;
+}
+
+.passion-felicity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.passion-felicity-sets:hover {
+    transform: scale(1.05);
+}
+
+.passion-felicity-sets {
+    transition: transform 0.3s;
+}
+
+
 @media (max-width: 768px) {
     .onepiece-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 0.5rem;
     }
+
+    .fourseasons-grid {
+        gap: 0.5rem;
+    }
+
+    .randomproducts-grid {
+        gap: 0.5rem;
+    }
+
+    .passion-felicity-grid {
+        gap: 0.5rem;
+    }
+
 }

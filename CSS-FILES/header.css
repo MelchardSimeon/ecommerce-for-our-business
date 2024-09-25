@@ -68,12 +68,18 @@ body {
     padding-right: 4rem;
 }
 
+.header-right:hover {
+    cursor: pointer;
+}
+
 .cart-icon {
+    font-size: 1rem;
     margin-left: 20px;
 }
 
-.open-sidebar svg, .search-icon, .wishlist-icon {
-    width: clamp(16px, 3vw, 24px); /* Dynamically resize icons */
+
+.open-sidebar svg, .search-icon, .wishlist-icon, .cart-icon {
+    width: clamp(1rem, 3vw, 1.5rem); /* Dynamically resize icons */
     height: auto;
 }
 

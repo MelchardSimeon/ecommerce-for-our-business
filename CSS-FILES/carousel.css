@@ -5,7 +5,6 @@
     max-width: 100%;
     overflow: hidden;
     margin: auto;
-    margin-bottom: 20px;
 }
 
 .carousel {
@@ -14,6 +13,7 @@
 
 .carousel-image {
     display: none;
+    max-height: 90vh;
     min-width: 100%;
     opacity: 0;
     transform: translateX(-100%);
