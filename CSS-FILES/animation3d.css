@@ -14,6 +14,7 @@
     overflow: hidden;
     position: relative;
     perspective: 1000px;
+    padding-bottom: 5rem;
 }
 
 .banner .slider {   
