@@ -59,6 +59,7 @@ overlay.addEventListener('click', () => {
 })
 
 
+
 // THE JAVASCRIPT CODE BELOW IS FOR THE CAROUSEL FEATURE 
 
 const carouselImages = document.querySelectorAll('.carousel-image')

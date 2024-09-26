@@ -78,8 +78,17 @@
 
 @media (max-width: 480px) {
 
+    .randomsets-h2 {
+        margin-top: 2rem !important;
+    }
+
+    .animation-3d {
+        margin-bottom: 0;
+    }
+
     .banner {
-        height: 50vh;
+        height: 45vh;
+        padding-bottom: 0;
     }
 
     .banner .slider {
