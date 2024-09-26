@@ -43,6 +43,34 @@
     margin-right: auto;
     position: relative;
     padding-left: 4rem;
+    outline: none;
+}
+
+.open-sidebar svg{
+    width: clamp(1.5rem, 3vw, 1.5rem);
+    height: auto;
+}
+
+.open-sidebar:focus, #search-button:focus {
+    outline: none;
+}
+
+.open-sidebar,
+#search-button,
+.open-sidebar svg,
+#search-button svg {
+  touch-action: manipulation;
+  outline: none;
+}
+
+.open-sidebar:focus, 
+#search-button:focus {
+  box-shadow: none; /* Remove any focus outline/shadow */
+}
+
+.open-sidebar:focus-visible, 
+#search-button:focus-visible {
+  outline: none; /* Ensure focus doesn't show on keyboard navigation */
 }
 
 .header-center {
@@ -56,6 +84,7 @@
     display: flex;
     margin-left: auto;
     padding-right: 4rem;
+    outline: none;
 }
 
 .header-right:hover {
@@ -67,9 +96,8 @@
     margin-left: 20px;
 }
 
-
-.open-sidebar svg, .search-icon, .wishlist-icon, .cart-icon {
-    width: clamp(1rem, 3vw, 1.5rem); /* Dynamically resize icons */
+.search-icon, .wishlist-icon, .cart-icon {
+    width: clamp(1.2rem, 3vw, 1.5rem); /* Dynamically resize icons */
     height: auto;
 }
 
@@ -79,7 +107,7 @@
     }
 
     .header-wrapper {
-        padding: 20px 10px;
+        padding: 1.25rem 0.625rem;
     }
 
     .header-left, .header-right {

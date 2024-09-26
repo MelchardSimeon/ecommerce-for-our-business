@@ -78,6 +78,10 @@
 
 @media (max-width: 480px) {
 
+    .banner {
+        height: 50vh;
+    }
+
     .banner .slider {
         width: 8rem;
         height: 8rem;
@@ -87,4 +91,7 @@
         transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(150px);
     }
     
+    .animation-3d h2 {
+        margin-bottom: 0rem;
+    }
 }
