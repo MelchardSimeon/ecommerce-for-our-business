@@ -1,5 +1,4 @@
 
-
 const onePieceSetData = [{
     image: 'img/1.png',
     name: 'Luffy Set',
@@ -42,20 +41,6 @@ const onePieceSetData = [{
     price: 899
 }]
 
-let onePieceGrid = document.querySelector('.onepiece-grid')
-
-onePieceSetData.forEach(product => {
-    let productsHTML = `
-    <div class="onepiece-sets hidden">
-        <img src="${product.image}" alt="">
-        <p>${product.name}</p>
-        <p class="price"><span>&#x20B1</span>${product.price}</p>
-    </div>`;
-    onePieceGrid.innerHTML += productsHTML;
-});
-
-
-// --------------------------
 
 let fourSeasonsSetData = [{
     image: 'img/bouquet sets/1.png',
@@ -75,20 +60,6 @@ let fourSeasonsSetData = [{
     price: 699
 }]
 
-let fourSeasonsGrid = document.querySelector('.fourseasons-grid')
-
-fourSeasonsSetData.forEach(product => {
-    let productsHTML = `
-    <div class="four-seasons hidden">
-        <img src="${product.image}" alt="">
-        <p>${product.name}</p>
-        <p class="price"><span>&#x20B1</span>${product.price}</p>
-    </div>`;
-    fourSeasonsGrid.innerHTML += productsHTML
-})
-
-
-// -------------------------------------------
 
 let randomSetsData = [{
     image: 'img/random-sets/1.png',
@@ -112,21 +83,6 @@ let randomSetsData = [{
     price: 799
 }]
 
-let randomSetsGrid = document.querySelector('.randomproducts-grid')
-
-randomSetsData.forEach(product => {
-    let productsHTML = `
-    <div class="random-sets hidden">
-        <img src="${product.image}" alt="">
-        <p>${product.name}</p>
-        <p class="price"><span>&#x20B1</span>${product.price}</p>
-    </div>`;
-
-    randomSetsGrid.innerHTML += productsHTML
-});
-
-
-// -------------------------------
 
 let passionFelicityData = [{
     image: 'img/passion-felicity/1.png',
@@ -138,15 +94,93 @@ let passionFelicityData = [{
     price: '559'
 }]
 
-let passionFelicityGrid = document.querySelector('.passion-felicity-grid')
 
-passionFelicityData.forEach(product => {
-    let productsHTML = `
-    <div class="passion-felicity-sets hidden">
+// let onePieceGrid = document.querySelector('.onepiece-grid')
+
+// onePieceSetData.forEach(product => {
+//     let productsHTML = `
+//     <div class="onepiece-sets hidden">
+//         <img src="${product.image}" alt="">
+//         <p>${product.name}</p>
+//         <p class="price"><span>&#x20B1</span>${product.price}</p>
+//     </div>`;
+//     onePieceGrid.innerHTML += productsHTML;
+// });
+
+
+// // --------------------------
+
+
+
+// let fourSeasonsGrid = document.querySelector('.fourseasons-grid')
+
+// fourSeasonsSetData.forEach(product => {
+//     let productsHTML = `
+//     <div class="four-seasons hidden">
+//         <img src="${product.image}" alt="">
+//         <p>${product.name}</p>
+//         <p class="price"><span>&#x20B1</span>${product.price}</p>   
+//     </div>`;
+//     fourSeasonsGrid.innerHTML += productsHTML
+// })
+
+
+// // -------------------------------------------
+
+
+
+// let randomSetsGrid = document.querySelector('.randomproducts-grid')
+
+// randomSetsData.forEach(product => {
+//     let productsHTML = `
+//     <div class="random-sets hidden">
+//         <img src="${product.image}" alt="">
+//         <p>${product.name}</p>
+//         <p class="price"><span>&#x20B1</span>${product.price}</p>
+//     </div>`;
+
+//     randomSetsGrid.innerHTML += productsHTML
+// });
+
+
+// // -------------------------------
+
+
+
+// let passionFelicityGrid = document.querySelector('.passion-felicity-grid')
+
+// passionFelicityData.forEach(product => {
+//     let productsHTML = `
+//     <div class="passion-felicity-sets hidden">
+//         <img src="${product.image}" alt="">
+//         <p>${product.name}</p>
+//         <p class="price"><span>&#x20B1</span>${product.price}</p>
+//     </div>`
+
+//     passionFelicityGrid.innerHTML += productsHTML
+// })
+
+
+
+// -------
+
+function generateHTML(gridSelector, data, className) {
+    const grid = document.querySelector(gridSelector)
+
+    data.forEach(product => {
+        const div = document.createElement('div')
+        div.className = className + ' hidden'
+        div.innerHTML = `
         <img src="${product.image}" alt="">
         <p>${product.name}</p>
-        <p class="price"><span>&#x20B1</span>${product.price}</p>
-    </div>`
+        <p class="price"><span>&#x20B1</span>${product.price}</p>`;
 
-    passionFelicityGrid.innerHTML += productsHTML
-})
+        grid.appendChild(div)
+    })
+}
+
+generateHTML('.onepiece-grid', onePieceSetData, '.onepiece-sets')
+generateHTML('.fourseasons-grid', fourSeasonsSetData, 'four-seasons')
+generateHTML('.randomproducts-grid', randomSetsData, 'random-sets')
+generateHTML('.passion-felicity-grid', passionFelicityData, 'passion-felicity-sets')
+
