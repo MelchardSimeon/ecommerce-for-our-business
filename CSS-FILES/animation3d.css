@@ -4,6 +4,15 @@
     height: 100vh;
 }
 
+.animation-3d h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    font-family: "cormorant", serif;
+}
+
+
 .banner {
     display: flex;
     justify-content: center;
@@ -83,12 +92,12 @@
     }
 
     .animation-3d {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
     }
 
     .banner {
-        height: 45vh;
-        padding-bottom: 0;
+        height: 45vh !important;
+        padding-bottom: 0 !important;
     }
 
     .banner .slider {

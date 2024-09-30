@@ -1,27 +1,27 @@
-.product-container {
+.product-container-1, .product-container-2{
     font-family: "cormorant", serif;
     padding: 2rem 0.5rem;
     background-color: #f9f9f9;
     text-align: center;
 }
 
-#price {
-    font-family: 'raleway', sans-serif;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-}
-
-.product-container img {
+.product-container-1 img, .product-container-2 img{
     width: 100%;
     margin-bottom: 1rem;
 }
 
-.product-container h2 {
+.product-container-1 h2, .product-container-2 h2{
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 5rem;
+}
+
+.price {
+    font-family: 'raleway', sans-serif;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .onepiece-grid {
@@ -30,45 +30,24 @@
     gap: 1.5rem;
 }
 
-.onepiece-sets {
-    transition: transform 0.3s;
+.onepiece-sets, .four-seasons, .random-sets, .passion-felicity-sets {
+    transition: transform 0.3s !important;
 }
 
-.onepiece-sets:hover {
+.onepiece-sets:hover, .four-seasons:hover, .random-sets:hover, .passion-felicity-sets:hover {
     transform: scale(1.05);
 }
-
 
 .fourseasons-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
-
-.four-seasons:hover {
-    transform: scale(1.05);
-}
-
-.four-seasons {
-    transition: transform 0.3s;
-}
-
-/* .random-products {
-    margin-top: 10rem;
-} */
 
 .randomproducts-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-}
-
-.random-sets:hover {
-    transform: scale(1.05);
-}
-
-.random-sets {
-    transition: transform 0.3s;
 }
 
 .passion-felicity-grid {
@@ -77,20 +56,11 @@
     gap: 1rem;
 }
 
-.passion-felicity-sets:hover {
-    transform: scale(1.05);
-}
-
-.passion-felicity-sets {
-    transition: transform 0.3s;
-}
-
-
 /* The code below is for the scroll into view animation  */
 
 .hidden {
     opacity: 0;
-    transition: all 1s;
+    transition: all 1s !important;
     transform: translateX(-100%);
 }
 
@@ -107,16 +77,7 @@
         gap: 0.5rem;
     }
 
-    .fourseasons-grid {
+    .fourseasons-grid, .randomproducts-grid, .passion-felicity-grid {
         gap: 0.5rem;
     }
-
-    .randomproducts-grid {
-        gap: 0.5rem;
-    }
-
-    .passion-felicity-grid {
-        gap: 0.5rem;
-    }
-
 }

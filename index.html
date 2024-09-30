@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="CSS-FILES/animation3d.css">
     <link rel="stylesheet" href="CSS-FILES/general.css">
     <link rel="stylesheet" href="CSS-FILES/founders.css">
-    <script src="main.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/ui-interactions.js" defer></script>
 </head>
 <body>
     <div class="header-wrapper">
-        <!-- <div id="main-header"> -->
             <div class="header-left">
                 <div class="open-sidebar">
                 <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
@@ -54,7 +54,6 @@
                     <path d="M352 128C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128H0v304c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V128h-96zM224 48c44.112 0 80 35.888 80 80H144c0-44.112 35.888-80 80-80zm176 384c0 17.645-14.355 32-32 32H80c-17.645 0-32-14.355-32-32V176h48v40c0 13.255 10.745 24 24 24s24-10.745 24-24v-40h160v40c0 13.255 10.745 24 24 24s24-10.745 24-24v-40h48v256z"></path>
                   </svg>
             </div>
-        <!-- </div> -->
     </div>
 
         <div class="overlay"></div>
@@ -113,90 +112,19 @@
 
             <!-- PRODUCT SECTIONS  -->
             
-
-            <section class="product-container">
+            <section class="product-container-1">
                 <div class="product-items hidden">
                     <h2>ONEPIECE SET</h2>
                     <div class="onepiece-grid">
-                        <div class="onepiece-sets hidden">
-                            <img src="img/1.png" alt="">
-                            <p>Luffy Set</p>
-                            <P id="price"><span>&#x20B1</span>899</P>
-                        </div>
-                        <div class="onepiece-sets hidden">
-                            <img src="img/2.png" alt="">
-                            <p>Zorro Set</p>
-                            <p id="price"><span>&#x20B1</span>899</p>
-                        </div>
-                        <div class="onepiece-sets hidden">
-                            <img src="img/3.png" alt="">
-                            <p>Sanji Set</p>
-                            <p id="price"><span>&#x20B1</span>899</p>
-                        </div>
-                        <div class="onepiece-sets hidden">
-                            <img src="img/4.png" alt="">
-                            <p>Nami Set</p>
-                            <p id="price"><span>&#x20B1</span>899</p>
-                        </div>
-                        <div class="onepiece-sets hidden">
-                            <img src="img/5.png" alt="">
-                            <p>Ussop Set</p>
-                            <p id="price"><span>&#x20B1</span>899</p>
-                        </div>
-                        <div class="onepiece-sets hidden">
-                            <img src="img/6.png" alt="">
-                            <p>Chopper Set</p>
-                            <p id="price"><span>&#x20B1</span>899</p>
-                        </div>
-                        <div class="onepiece-sets hidden">
-                            <img src="img/7.png" alt="">
-                            <p>Robin Set</p>
-                            <p id="price">P899</p>
-                        </div>
-                        <div class="onepiece-sets hidden">
-                            <img src="img/8.png" alt="">
-                            <p>Brook Set</p>
-                            <p id="price"><span>&#x20B1</span>899</p>
-                        </div>
-                        <div class="onepiece-sets hidden">
-                            <img src="img/9.png" alt="">
-                            <p>Franky Set</p>
-                            <p id="price"><span>&#x20B1</span>899</p>
-                        </div>
-                        <div class="onepiece-sets hidden">
-                            <img src="img/10.png" alt="">
-                            <p>Jinbei Set</p>
-                            <p id="price"><span>&#x20B1</span>899</p>
-                        </div>
                     </div>
                 </div>
 
                 <div class="product-items">
                     <h2>FOUR SEASONS SET</h2>
                     <div class="fourseasons-grid">
-                    <div class="four-seasons hidden">
-                        <img src="img/bouquet sets/1.png" alt="">
-                        <p>Spring</p>
-                        <p id="price"><span>&#x20B1</span>699</p>
-                    </div>
-                    <div class="four-seasons hidden">
-                        <img src="img/bouquet sets/2.png" alt="">
-                        <P>Summer</P>
-                        <p id="price"><span>&#x20B1</span>699</p>
-                    </div>
-                    <div class="four-seasons hidden">
-                        <img src="img/bouquet sets/3.png" alt="">
-                        <P>Winter</P>
-                        <p id="price"><span>&#x20B1</span>699</p>
-                    </div>
-                    <div class="four-seasons hidden">
-                        <img src="img/bouquet sets/4.png" alt="">
-                        <P>Autumn</P>
-                        <p id="price"><span>&#x20B1</span>699</p>
-                    </div>
                     </div>
                 </div>
-
+            </section>
 
                 <!-- This is for 3D ANIMATION  -->
 
@@ -213,52 +141,19 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ----------------------- -->
                 
-                
+            <section class="product-container-2">
                 <div class="product-items">
                     <h2 class="randomsets-h2">RANDOM SETS</h2>
                     <div class="randomproducts-grid">
-                        <div class="random-sets hidden">
-                            <img src="img/random-sets/1.png" alt="">
-                            <p>Blossom</p>
-                            <p id="price"><span>&#x20B1</span>799</p>
-                        </div>
-                        <div class="random-sets hidden">
-                            <img src="img/random-sets/2.png" alt="">
-                            <p>Black Pink</p>
-                            <p class="price"><span>&#x20B1</span>799</p>
-                        </div>
-                        <div class="random-sets hidden">
-                            <img src="img/random-sets/3.png" alt="">
-                            <p>Amethyst</p>
-                            <p id="price"><span>&#x20B1</span>799</p>
-                        </div>
-                        <div class="random-sets hidden">
-                            <img src="img/random-sets/4.png" alt="">
-                            <p>Bad Blood</p>
-                            <p id="price"><span>&#x20B1</span>799</p>
-                        </div>
-                        <div class="random-sets hidden">
-                            <img src="img/random-sets/5.png" alt="">
-                            <p>Sunflower</p>
-                            <p id="price"><span>&#x20B1</span>799</p>
-                        </div>
                     </div>
                 </div>
 
                 <div class="product-items">
                     <h2>PASSION & FELICITY</h2>
                     <div class="passion-felicity-grid">
-                        <div class="passion-felicity-sets hidden">
-                            <img src="img/passion-felicity/1.png" alt="">
-                            <p>Passion</p>
-                            <p id="price"><span>&#x20B1</span>559</p>
-                        </div>
-                        <div class="passion-felicity-sets hidden">
-                            <img src="img/passion-felicity/2.png" alt="">
-                            <p>Felicity</p>
-                            <p id="price"><span>&#x20B1</span>559</p>
-                        </div>
                     </div>
                 </div>
             </section>
