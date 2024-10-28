@@ -119,6 +119,19 @@
     gap: 1.5rem;
 }
 
+.groot-grid img {
+    max-width: 20vw;
+}
+
+.carousel3d {
+    border-radius: 1rem;
+}
+
+.shadowbox-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* The code below is for the scroll into view animation  */
 
 .hidden {

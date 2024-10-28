@@ -191,12 +191,141 @@ let grootData = [{
     price: '59'
 }]
 
-let minipotsData = [{
-    image: 'img/otherKeychains/Groot.png',
-    name: 'Groot',
-    price: '59'
+let sunflowerMinipotsData = [{
+    image: 'img/minipots/11.png',
+    name: 'Beige',
+    price: '129'
+},{
+    image: 'img/minipots/12.png',
+    name: 'Orange',
+    price: '129'
+},{
+    image: 'img/minipots/13.png',
+    name: 'Royal Blue',
+    price: '129'
+},{
+    image: 'img/minipots/14.png',
+    name: 'Sky Blue',
+    price: '129'
+},{
+    image: 'img/minipots/15.png',
+    name: 'Light Pink',
+    price: '129'
+},{
+    image: 'img/minipots/16.png',
+    name: 'Red Velvet',
+    price: '129'
+},{
+    image: 'img/minipots/2.png',
+    name: 'Lavender',
+    price: '129'
+},{
+    image: 'img/minipots/9.png',
+    name: 'Black',
+    price: '129'
+},{
+    image: 'img/minipots/4.png',
+    name: 'Dark Gray',
+    price: '129'
+},{
+    image: 'img/minipots/5.png',
+    name: 'Cyan',
+    price: '129'
+},{
+    image: 'img/minipots/10.png',
+    name: 'Gray',
+    price: '129'
+},{
+    image: 'img/minipots/7.png',
+    name: 'Yellow',
+    price: '129'
+},{
+    image: 'img/minipots/8.png',
+    name: 'Purple',
+    price: '129'
+},{
+    image: 'img/minipots/3.png',
+    name: 'Red',
+    price: '129'
+},{
+    image: 'img/minipots/6.png',
+    name: 'Mint Green',
+    price: '129'
 }]
 
+let cactusMinipotsData = [{
+    image: 'img/minipots/32.png',
+    name: 'Green (Original)',
+    price: '129'
+},{
+    image: 'img/minipots/33.png',
+    name: 'Pink',
+    price: '129'
+},{
+    image: 'img/minipots/34.png',
+    name: 'Cyan',
+    price: '129'
+},{
+    image: 'img/minipots/35.png',
+    name: 'Blue',
+    price: '129'
+},{
+    image: 'img/minipots/36.png',
+    name: 'Dirty White',
+    price: '129'
+},{
+    image: 'img/minipots/37.png',
+    name: 'Rusty Brown',
+    price: '129'
+},{
+    image: 'img/minipots/38.png',
+    name: 'Gray',
+    price: '129'
+}]
+
+let succulentMinipotsData = [{
+    image: 'img/minipots/24.png',
+    name: 'Green (Original)',
+    price: '129'
+},{
+    image: 'img/minipots/25.png',
+    name: 'Pink',
+    price: '129'
+},{
+    image: 'img/minipots/26.png',
+    name: 'Cyan',
+    price: '129'
+},{
+    image: 'img/minipots/27.png',
+    name: 'Blue',
+    price: '129'
+},{
+    image: 'img/minipots/28.png',
+    name: 'Dirty White',
+    price: '129'
+},{
+    image: 'img/minipots/29.png',
+    name: 'Rusty Brown',
+    price: '129'
+},{
+    image: 'img/minipots/30.png',
+    name: 'Gray',
+    price: '129'
+}]
+
+let shadowboxData = [{
+    image: 'img/shadowbox/2.png',
+    name: 'Sunflower',
+    price: '159'
+},{
+    image: 'img/shadowbox/3.png',
+    name: 'Rose',
+    price: '159'
+},{
+    image: 'img/shadowbox/4.png',
+    name: 'Poppy',
+    price: '159'
+}]
 
 function generateHTML(gridSelector, data, className) {
     const grid = document.querySelector(gridSelector)
@@ -214,6 +343,8 @@ function generateHTML(gridSelector, data, className) {
 }
 
 
+
+
 generateHTML('.onepiece-grid', onePieceSetData, 'onepiece-sets');
 generateHTML('.fourseasons-grid', fourSeasonsSetData, 'four-seasons');
 generateHTML('.randomproducts-grid', randomSetsData, 'random-sets');
@@ -222,6 +353,10 @@ generateHTML('.pokemon-grid', pokemonData, 'pokemon-keychain-sets');
 generateHTML('.onepiece-keychain-grid', onepieceKeychainData, 'onepiece-keychain-sets');
 generateHTML('.carbrand-grid', carBrandData, 'carBrand-sets');
 generateHTML('.groot-grid', grootData, 'groot-sets');
+generateHTML('.sunflowerMinipots-grid', sunflowerMinipotsData, 'minipots-sets');
+generateHTML('.cactusMinipots-grid', cactusMinipotsData, 'minipots-sets');
+generateHTML('.succulentMinipots-grid', succulentMinipotsData, 'minipots-sets');
+generateHTML('.shadowbox-grid', shadowboxData, 'shadowbox-sets');
 
 
 

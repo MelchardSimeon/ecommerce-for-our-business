@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextButton = document.getElementById('next');
   let currentIndex = 0;
   const productTitle = document.querySelector('#product-title')
-  const titles = ['BOUQUETS', 'KEYCHAINS', 'MINI POTS']
+  const titles = ['BOUQUETS', 'KEYCHAINS', 'MINI POTS', 'SHADOW BOX (NEW)']
 
   function updateDisplay() {
       productSets.forEach((set, index) => {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
           currentIndex = index;
           updateDisplay();
       });
-  });
+  });   
 
   nextButton.addEventListener('click', showNext);
   prevButton.addEventListener('click', showPrev);
