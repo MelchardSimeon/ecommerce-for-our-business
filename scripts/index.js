@@ -184,29 +184,16 @@ let carBrandData = [{
     price: '59'
 }]
 
-let otherKeychainData = [{
-    image: 'img/carbrands/honda.png',
-    name: 'Honda',
+
+let grootData = [{
+    image: 'img/otherKeychains/Groot.png',
+    name: 'Groot',
     price: '59'
-}, {
-    image: 'img/carbrands/mazda.png',
-    name: 'Mazda',
-    price: '59'
-}, {
-    image: 'img/carbrands/toyota.png',
-    name: 'Toyota',
-    price: '59'
-}, {
-    image: 'img/carbrands/mitsubishi.png',
-    name: 'Mitsubishi',
-    price: '59'
-}, {
-    image: 'img/carbrands/hyundai.png',
-    name: 'Hyundai',
-    price: '59'
-}, {
-    image: 'img/carbrands/bmw.png',
-    name: 'BMW',
+}]
+
+let minipotsData = [{
+    image: 'img/otherKeychains/Groot.png',
+    name: 'Groot',
     price: '59'
 }]
 
@@ -216,7 +203,7 @@ function generateHTML(gridSelector, data, className) {
 
     data.forEach(product => {
         const div = document.createElement('div')
-        div.className = className + ' hidden'
+        div.className = className + ' hidden' + ' hoverz'
         div.innerHTML = `
         <img src="${product.image}" alt="">
         <p>${product.name}</p>
@@ -234,6 +221,8 @@ generateHTML('.passion-felicity-grid', passionFelicityData, 'passion-felicity-se
 generateHTML('.pokemon-grid', pokemonData, 'pokemon-keychain-sets');
 generateHTML('.onepiece-keychain-grid', onepieceKeychainData, 'onepiece-keychain-sets');
 generateHTML('.carbrand-grid', carBrandData, 'carBrand-sets');
+generateHTML('.groot-grid', grootData, 'groot-sets');
+
 
 
 

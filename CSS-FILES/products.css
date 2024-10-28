@@ -105,11 +105,11 @@
     gap: 1.5rem;
 }
 
-.onepiece-sets, .four-seasons, .random-sets, .passion-felicity-sets, .pokemon-keychain-sets {
+.hoverz {
     transition: transform 0.3s !important;
 }
 
-.onepiece-sets:hover, .four-seasons:hover, .random-sets:hover, .passion-felicity-sets:hover, .pokemon-keychain-sets:hover {
+.hoverz:hover {
     transform: scale(1.05);
 }
 
@@ -142,5 +142,9 @@
 
     .fourseasons-grid, .randomproducts-grid, .passion-felicity-grid {
         gap: 0.5rem;
+    }
+
+    .groot-grid {
+        justify-self: center;
     }
 }

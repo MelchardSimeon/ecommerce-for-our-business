@@ -4,11 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const prevButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
   let currentIndex = 0;
+  const productTitle = document.querySelector('#product-title')
+  const titles = ['BOUQUETS', 'KEYCHAINS', 'MINI POTS']
 
   function updateDisplay() {
       productSets.forEach((set, index) => {
           set.style.display = index === currentIndex ? 'block' : 'none';
           dots[index].classList.toggle('active', index === currentIndex);
+
+          productTitle.textContent = titles[currentIndex]
       });
   }
 
