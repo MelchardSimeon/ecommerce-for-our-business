@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="CSS-FILES/founders.css">
     <script src="scripts/index.js" defer></script>
     <script src="scripts/ui-interactions.js" defer></script>
+    <script src="scripts/newFeature.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header-wrapper">
@@ -111,53 +116,71 @@
 
 
             <!-- PRODUCT SECTIONS  -->
-            
-            <section class="product-container-1">
-                <div class="product-items hidden">
-                    <h2>ONEPIECE SET</h2>
-                    <div class="onepiece-grid">
-                    </div>
+            <div class="catalog-container">
+                <h2 id="product-title">Bouquets</h2> <!-- Default title -->     
+                <div class="catalog-indicators">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
                 </div>
-
-                <div class="product-items">
-                    <h2>FOUR SEASONS SET</h2>
-                    <div class="fourseasons-grid">
-                    </div>
-                </div>
-            </section>
-
-                <!-- This is for 3D ANIMATION  -->
-
-                <div class="animation-3d">
-                    <h2>SUNFLOWER MINI POTS</h2>
-                    <div class="banner">
-                        <div class="slider" style="--quantity: 6">
-                            <div class="item" style="--position: 1"><img src="img/SunflowerMiniPots/1.jpg" alt=""></div>
-                            <div class="item" style="--position: 2"><img src="img/SunflowerMiniPots/2.jpg" alt=""></div>
-                            <div class="item" style="--position: 3"><img src="img/SunflowerMiniPots/3.jpg" alt=""></div>
-                            <div class="item" style="--position: 4"><img src="img/SunflowerMiniPots/4.jpg" alt=""></div>
-                            <div class="item" style="--position: 5"><img src="img/SunflowerMiniPots/5.jpg" alt=""></div>
-                            <div class="item" style="--position: 6"><img src="img/SunflowerMiniPots/7.jpg" alt=""></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ----------------------- -->
                 
-            <section class="product-container-2">
-                <div class="product-items">
-                    <h2 class="randomsets-h2">RANDOM SETS</h2>
-                    <div class="randomproducts-grid">
-                    </div>
-                </div>
+                <div class="catalog-track">
+                    <section class="product-set" id="bouquets">
+                        <div class="product-items">
+                            <h2>ONEPIECE SET</h2>
+                            <div class="onepiece-grid grid"></div>
+                        </div>
+                        <div class="product-items">
+                            <h2>FOUR SEASONS SET</h2>
+                            <div class="fourseasons-grid grid"></div>
+                        </div>
+                        <div class="product-items">
+                            <h2 class="randomsets-h2">RANDOM SETS</h2>
+                            <div class="randomproducts-grid grid"></div>
+                        </div>
+                        <div class="product-items">
+                            <h2>PASSION & FELICITY</h2>
+                            <div class="passion-felicity-grid grid"></div>
+                        </div>
+                    </section>
+                    <section class="product-set" id="keychains" style="display: none;">
+                        <div class="product-items">
+                            <h2>ONEPIECE KEYCHAINS</h2>
+                            <div class="onepiece-keychain-grid grid"></div>
+                        </div>
+                        <div class="product-items">
+                            <h2>CAR BRANDS KEYCHAINS</h2>
+                            <div class="carbrand-grid grid"></div>
+                        </div>
+                        <div class="product-items">
+                            <h2>Pokemon Keychains</h2>
+                            <div class="pokemon-grid grid"></div>
+                        </div>
 
-                <div class="product-items">
-                    <h2>PASSION & FELICITY</h2>
-                    <div class="passion-felicity-grid">
-                    </div>
+                        <div class="animation-3d">
+                            <h2>PET PAWS, LABUBU, AND FACE KEYCHAINS!!</h2>
+                            <div class="banner">
+                                <div class="slider" style="--quantity: 6">
+                                    <div class="item" style="--position: 1"><img src="img/otherKeychains/labubuAll.png" alt=""></div>
+                                    <div class="item" style="--position: 2"><img src="img/otherKeychains/labubu.png" alt=""></div>
+                                    <div class="item" style="--position: 3"><img src="img/otherKeychains/petPaw1.png" alt=""></div>
+                                    <div class="item" style="--position: 4"><img src="img/otherKeychains/petPaw2.png" alt=""></div>
+                                    <div class="item" style="--position: 5"><img src="img/otherKeychains/face1.png" alt=""></div>
+                                    <div class="item" style="--position: 6"><img src="img/otherKeychains/face2.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
                 </div>
-            </section>
-         
+            </div> 
+
+            <div class="catalog-nav">
+                <button id="prev">←</button>
+                <button id="next">→</button>
+            </div>
+        
               
 
 
@@ -176,19 +199,19 @@
                     </div>
                     <div class="footer-section contact">
                         <h2>Contacts</h2>
-                        <p>Email: <a href="mailto:knottheusual@gmail.com">knottheusual@gmail.com</a></p>
-                        <p>Phone: <a href="mailto:knottheusual@gmail.com">092CIN0</a></p>
+                        <p>Email: <a href="mailto:knottheusual.ph@gmail.com">knottheusual.ph@gmail.com</a></p>
+                        <p>Phone: <a href="mailto:knottheusual@gmail.com">09662613860</a></p>
                     </div>
                     <div class=" footer-section social">
                         <h2>Follow Us</h2>
                             <!-- facebook icon  -->
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" viewBox="0 0 512 512"><path fill="#005eff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+                        <a href="https://www.facebook.com/knottheusual.ph/"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" viewBox="0 0 512 512"><path fill="#005eff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
 
                             <!-- tiktok icon  -->
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" viewBox="0 0 448 512"><path fill="#000000" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a>
+                        <a href="https://www.tiktok.com/@knottheusual.ph"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" viewBox="0 0 448 512"><path fill="#000000" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a>
 
                             <!-- instagram icon  -->
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" xml:space="preserve" viewBox="0 0 16 16" id="instagram">
+                        <a href="https://www.instagram.com/knottheusual.ph/"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" xml:space="preserve" viewBox="0 0 16 16" id="instagram">
                                 <linearGradient id="a" x1="1.464" x2="14.536" y1="14.536" y2="1.464" gradientUnits="userSpaceOnUse">
                                 <stop offset="0" stop-color="#FFC107"></stop>
                                 <stop offset=".507" stop-color="#F44336"></stop>
@@ -217,7 +240,5 @@
             </footer>
 
 
-
-            
 </body>
 </html>

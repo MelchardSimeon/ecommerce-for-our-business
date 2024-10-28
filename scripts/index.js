@@ -9,35 +9,35 @@ const onePieceSetData = [{
     price: 899
 }, {
     image: 'img/3.png',
-    name: 'Zorro Set',
+    name: 'Sanji Set',
     price: 899
 }, {
     image: 'img/4.png',
-    name: 'Zorro Set',
+    name: 'Nami Set',
     price: 899
 }, {
     image: 'img/5.png',
-    name: 'Zorro Set',
+    name: 'Chopper Set',
     price: 899
 }, {
     image: 'img/6.png',
-    name: 'Zorro Set',
+    name: 'Robin Set',
     price: 899
 }, {
     image: 'img/7.png',
-    name: 'Zorro Set',
+    name: 'Brook Set',
     price: 899
 }, {
     image: 'img/8.png',
-    name: 'Zorro Set',
+    name: 'Franky Set',
     price: 899
 }, {
     image: 'img/9.png',
-    name: 'Zorro Set',
+    name: 'Jinbei Set',
     price: 899
 }, {
     image: 'img/10.png',
-    name: 'Zorro Set',
+    name: 'Soge King Set',
     price: 899
 }]
 
@@ -53,116 +53,163 @@ let fourSeasonsSetData = [{
 }, {
     image: 'img/bouquet sets/3.png',
     name: 'Winter',
-    price: 699
+    price: 629
 }, {
     image: 'img/bouquet sets/4.png',
     name: 'Autumn',
-    price: 699
+    price: 679
 }]
 
 
 let randomSetsData = [{
     image: 'img/random-sets/1.png',
     name:'Blossom',
-    price: 799
+    price: 649
 }, {
     image: 'img/random-sets/2.png',
-    name:'Blossom',
-    price: 799
+    name:'Black Pink',
+    price: 649
 }, {
     image: 'img/random-sets/3.png',
-    name:'Blossom',
-    price: 799
+    name:'Amethyst',
+    price: 699
 }, {
     image: 'img/random-sets/4.png',
-    name:'Blossom',
-    price: 799
+    name:'Bad Blood',
+    price: 649
 }, {
     image: 'img/random-sets/5.png',
-    name:'Blossom',
-    price: 799
+    name:'Sunflower',
+    price: 699
 }]
 
 
 let passionFelicityData = [{
     image: 'img/passion-felicity/1.png',
     name: 'Passion',
-    price: '559'
+    price: '599'
 }, {
     image: 'img/passion-felicity/2.png',
-    name: 'Passion',
-    price: '559'
+    name: 'Felicity',
+    price: '599'
+}, {
+    image: 'img/passion-felicity/3.png',
+    name: 'Euphoria',
+    price: '599'
+}, {
+    image: 'img/passion-felicity/4.png',
+    name: 'Iris',
+    price: '599'
 }]
 
+let pokemonData = [{
+    image: 'img/pokemon/c.png',
+    name: 'Squirtle',
+    price: '59'
+}, {
+    image: 'img/pokemon/d.png',
+    name: 'Bulbasaur',
+    price: '59'
+}, {
+    image: 'img/pokemon/e.png',
+    name: 'Charmander',
+    price: '59'
+}, {
+    image: 'img/pokemon/e.png',
+    name: 'Pickachu',
+    price: '59'
+}]
 
-// let onePieceGrid = document.querySelector('.onepiece-grid')
+let onepieceKeychainData = [{
+    image: 'img/Onepiece-keychains/Luffy.png',
+    name: 'Luffy',
+    price: '59'
+}, {
+    image: 'img/Onepiece-keychains/Zorro.png',
+    name: 'Zorro',
+    price: '59'
+}, {
+    image: 'img/Onepiece-keychains/Sanji.png',
+    name: 'Sanji',
+    price: '59'
+}, {
+    image: 'img/Onepiece-keychains/Brook.png',
+    name: 'Brook',
+    price: '59'
+}, {
+    image: 'img/Onepiece-keychains/Chopper.png',
+    name: 'Chopper',
+    price: '59'
+}, {
+    image: 'img/Onepiece-keychains/Blackbeard.png',
+    name: 'Blackbeard',
+    price: '59'
+}, {
+    image: 'img/Onepiece-keychains/Whitebeard.png',
+    name: 'Whitebeard',
+    price: '59'
+}, {
+    image: 'img/Onepiece-keychains/Shanks.png',
+    name: 'Shanks',
+    price: '59'
+}, {
+    image: 'img/Onepiece-keychains/Law.png',
+    name: 'Law',
+    price: '59'
+}]
 
-// onePieceSetData.forEach(product => {
-//     let productsHTML = `
-//     <div class="onepiece-sets hidden">
-//         <img src="${product.image}" alt="">
-//         <p>${product.name}</p>
-//         <p class="price"><span>&#x20B1</span>${product.price}</p>
-//     </div>`;
-//     onePieceGrid.innerHTML += productsHTML;
-// });
+let carBrandData = [{
+    image: 'img/carbrands/honda.png',
+    name: 'Honda',
+    price: '59'
+}, {
+    image: 'img/carbrands/mazda.png',
+    name: 'Mazda',
+    price: '59'
+}, {
+    image: 'img/carbrands/toyota.png',
+    name: 'Toyota',
+    price: '59'
+}, {
+    image: 'img/carbrands/mitsubishi.png',
+    name: 'Mitsubishi',
+    price: '59'
+}, {
+    image: 'img/carbrands/hyundai.png',
+    name: 'Hyundai',
+    price: '59'
+}, {
+    image: 'img/carbrands/bmw.png',
+    name: 'BMW',
+    price: '59'
+}]
 
+let otherKeychainData = [{
+    image: 'img/carbrands/honda.png',
+    name: 'Honda',
+    price: '59'
+}, {
+    image: 'img/carbrands/mazda.png',
+    name: 'Mazda',
+    price: '59'
+}, {
+    image: 'img/carbrands/toyota.png',
+    name: 'Toyota',
+    price: '59'
+}, {
+    image: 'img/carbrands/mitsubishi.png',
+    name: 'Mitsubishi',
+    price: '59'
+}, {
+    image: 'img/carbrands/hyundai.png',
+    name: 'Hyundai',
+    price: '59'
+}, {
+    image: 'img/carbrands/bmw.png',
+    name: 'BMW',
+    price: '59'
+}]
 
-// // --------------------------
-
-
-
-// let fourSeasonsGrid = document.querySelector('.fourseasons-grid')
-
-// fourSeasonsSetData.forEach(product => {
-//     let productsHTML = `
-//     <div class="four-seasons hidden">
-//         <img src="${product.image}" alt="">
-//         <p>${product.name}</p>
-//         <p class="price"><span>&#x20B1</span>${product.price}</p>   
-//     </div>`;
-//     fourSeasonsGrid.innerHTML += productsHTML
-// })
-
-
-// // -------------------------------------------
-
-
-
-// let randomSetsGrid = document.querySelector('.randomproducts-grid')
-
-// randomSetsData.forEach(product => {
-//     let productsHTML = `
-//     <div class="random-sets hidden">
-//         <img src="${product.image}" alt="">
-//         <p>${product.name}</p>
-//         <p class="price"><span>&#x20B1</span>${product.price}</p>
-//     </div>`;
-
-//     randomSetsGrid.innerHTML += productsHTML
-// });
-
-
-// // -------------------------------
-
-
-
-// let passionFelicityGrid = document.querySelector('.passion-felicity-grid')
-
-// passionFelicityData.forEach(product => {
-//     let productsHTML = `
-//     <div class="passion-felicity-sets hidden">
-//         <img src="${product.image}" alt="">
-//         <p>${product.name}</p>
-//         <p class="price"><span>&#x20B1</span>${product.price}</p>
-//     </div>`
-
-//     passionFelicityGrid.innerHTML += productsHTML
-// })
-
-
-
-// -------
 
 function generateHTML(gridSelector, data, className) {
     const grid = document.querySelector(gridSelector)
@@ -179,8 +226,14 @@ function generateHTML(gridSelector, data, className) {
     })
 }
 
-generateHTML('.onepiece-grid', onePieceSetData, '.onepiece-sets')
-generateHTML('.fourseasons-grid', fourSeasonsSetData, 'four-seasons')
-generateHTML('.randomproducts-grid', randomSetsData, 'random-sets')
-generateHTML('.passion-felicity-grid', passionFelicityData, 'passion-felicity-sets')
+
+generateHTML('.onepiece-grid', onePieceSetData, 'onepiece-sets');
+generateHTML('.fourseasons-grid', fourSeasonsSetData, 'four-seasons');
+generateHTML('.randomproducts-grid', randomSetsData, 'random-sets');
+generateHTML('.passion-felicity-grid', passionFelicityData, 'passion-felicity-sets');
+generateHTML('.pokemon-grid', pokemonData, 'pokemon-keychain-sets');
+generateHTML('.onepiece-keychain-grid', onepieceKeychainData, 'onepiece-keychain-sets');
+generateHTML('.carbrand-grid', carBrandData, 'carBrand-sets');
+
+
 

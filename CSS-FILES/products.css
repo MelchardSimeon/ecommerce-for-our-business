@@ -1,16 +1,91 @@
-.product-container-1, .product-container-2{
-    font-family: "cormorant", serif;
-    padding: 2rem 0.5rem;
-    background-color: #f9f9f9;
-    text-align: center;
+.catalog-container {
+    position: relative;
+    overflow: hidden;
 }
 
-.product-container-1 img, .product-container-2 img{
+.catalog-track {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+#product-title {
+    font-family: 'Cinzel', sans-serif;
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 2rem;
+}
+
+.catalog-indicators {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.dot {
+    display: inline-block;
+    height: 0.938rem;
+    width: 0.938rem;
+    margin: 0 0.313rem;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+.catalog-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#prev, #next {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.625rem;
+}   
+
+#prev {
+    left: 0.6rem;
+}
+
+#next {
+    right: 0.6rem;
+}
+
+.catalog-nav {
+    display: flex;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* _---------------------------------------------------_ */
+
+.product-set {
+    min-width: 100%;
+    font-family: "cormorant", serif;
+    padding: 0.5rem 0.5rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.product-set img{
     width: 100%;
     margin-bottom: 1rem;
 }
 
-.product-container-1 h2, .product-container-2 h2{
+.product-set h2{
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -26,34 +101,22 @@
 
 .onepiece-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
-.onepiece-sets, .four-seasons, .random-sets, .passion-felicity-sets {
-    transition: transform 0.3s !important;
-}
-
-.onepiece-sets:hover, .four-seasons:hover, .random-sets:hover, .passion-felicity-sets:hover {
-    transform: scale(1.05);
-}
-
-.fourseasons-grid {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
 
-.randomproducts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+.onepiece-sets, .four-seasons, .random-sets, .passion-felicity-sets, .pokemon-keychain-sets {
+    transition: transform 0.3s !important;
 }
 
-.passion-felicity-grid {
+.onepiece-sets:hover, .four-seasons:hover, .random-sets:hover, .passion-felicity-sets:hover, .pokemon-keychain-sets:hover {
+    transform: scale(1.05);
+}
+
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
 /* The code below is for the scroll into view animation  */
@@ -71,7 +134,7 @@
 
 
 @media (max-width: 768px) {
-    .onepiece-grid {
+    .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
