@@ -115,7 +115,7 @@
 }
 
 .nav-button {
-    background: linear-gradient(135deg, #f9f5f0, #FFDAC2); /* Match navigation button gradient */
+    background: linear-gradient(135deg, #f9f5f0, #f1e0d6); /* Match navigation button gradient */
     color: #3e3a3a; /* Deep gray-brown for contrast */
     font-size: 0.8rem;
     font-weight: 600;
