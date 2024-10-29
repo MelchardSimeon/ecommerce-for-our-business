@@ -1,67 +1,45 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const productSets = document.querySelectorAll('.product-set');
-  const dots = document.querySelectorAll('.dot');
-  const prevButton = document.getElementById('prev');
-  const nextButton = document.getElementById('next');
-  let currentIndex = 0;
-  const productTitle = document.querySelector('#product-title')
-  const titles = ['BOUQUETS', 'KEYCHAINS', 'MINI POTS', 'SHADOW BOX (NEW)']
+let currentCategoryIndex = 0; // Index for the category navigation
+const categoryButtons = document.querySelectorAll('.catalog-navigation .tab'); // Select category buttons
+const productSets = document.querySelectorAll('.product-set'); // Select all product sets
+const totalCategories = productSets.length; // Total number of categories
 
-  function updateDisplay() {
-      productSets.forEach((set, index) => {
-          set.style.display = index === currentIndex ? 'block' : 'none';
-          dots[index].classList.toggle('active', index === currentIndex);
+// Function to show the current product set
+function showCurrentCategory() {
+    productSets.forEach((set, index) => {
+        set.style.display = (index === currentCategoryIndex) ? 'block' : 'none'; // Show the current set, hide others
+    });
 
-          productTitle.textContent = titles[currentIndex]
-      });
-  }
+    // Update the active class for buttons
+    categoryButtons.forEach((button, index) => {
+        button.classList.toggle('active', index === currentCategoryIndex);
+    });
+}
 
-  function showNext() {
-      currentIndex = (currentIndex + 1) % productSets.length;
-      updateDisplay();
-  }
-
-  function showPrev() {
-      currentIndex = (currentIndex - 1 + productSets.length) % productSets.length;
-      updateDisplay();
-  }
-
-  dots.forEach((dot, index) => {
-      dot.addEventListener('click', () => {
-          currentIndex = index;
-          updateDisplay();
-      });
-  });   
-
-  nextButton.addEventListener('click', showNext);
-  prevButton.addEventListener('click', showPrev);
-
-  // Swipe functionality
-  let startX;
-  let endX;
-
-  const touchStart = (event) => {
-      startX = event.touches[0].clientX;
-  };
-
-  const touchEnd = (event) => {
-      endX = event.changedTouches[0].clientX;
-      handleSwipe();
-  };
-
-  const handleSwipe = () => {
-      if (startX - endX > 50) {
-          showNext(); // Swipe left
-      } else if (endX - startX > 50) {
-          showPrev(); // Swipe right
-      }
-  };
-
-  // Add touch event listeners to the catalog track
-  const catalogTrack = document.querySelector('.catalog-track');
-  catalogTrack.addEventListener('touchstart', touchStart);
-  catalogTrack.addEventListener('touchend', touchEnd);
-
-  // Initial display setup
-  updateDisplay();
+// Event listener for category buttons
+categoryButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        currentCategoryIndex = index; // Set current category index
+        showCurrentCategory(); // Show the selected category
+    });
 });
+
+// Navigation buttons for next and previous
+const prevButton = document.getElementById('prev-button');
+const nextButton = document.getElementById('next-button');
+
+function nextCategory() {
+    currentCategoryIndex = (currentCategoryIndex + 1) % totalCategories; // Loop back to the start
+    showCurrentCategory();
+}
+
+function prevCategory() {
+    currentCategoryIndex = (currentCategoryIndex - 1 + totalCategories) % totalCategories; // Loop to the end
+    showCurrentCategory();
+}
+
+// Add event listeners for the next and previous buttons
+nextButton.addEventListener('click', nextCategory);
+prevButton.addEventListener('click', prevCategory);
+
+// Initial call to set the first product set visible
+showCurrentCategory();

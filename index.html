@@ -116,16 +116,14 @@
 
 
             <!-- PRODUCT SECTIONS  -->
-            <div class="catalog-container">
-                <h2 id="product-title">Bouquets</h2> <!-- Default title -->     
-                <div class="catalog-indicators">
-                    <span class="dot active" data-index="0"></span>
-                    <span class="dot" data-index="1"></span>
-                    <span class="dot" data-index="2"></span>
-                    <span class="dot" data-index="3"></span>
-                </div>
-                
+            <div class="catalog-container">               
                 <div class="catalog-track">
+                    <div class="catalog-navigation">
+                        <button class="tab active" data-category="bouquets">Bouquets</button>
+                        <button class="tab" data-category="keychains">Keychains</button>
+                        <button class="tab" data-category="minipots">Mini Pots</button>
+                        <button class="tab" data-category="shadowbox">Shadow Box</button>
+                    </div>
                     <section class="product-set" id="bouquets">
                         <div class="product-items">
                             <h2>ONEPIECE SET</h2>
@@ -180,36 +178,33 @@
 
                         <section class="product-set" id="minipots" style="display: none;">
                             <div class="product-items">
-                                <h2>Sunflower Minipots</h2>
+                                <h2>SUNFLOWER MINIPOTS</h2>
                                 <div class="sunflowerMinipots-grid grid"></div>
                             </div>
                             <div class="product-items">
-                                <h2>Cactus Minipots</h2>
+                                <h2>CACTUS MINIPOTS</h2>
                                 <div class="cactusMinipots-grid grid"></div>
                             </div>
                             <div class="product-items">
-                                <h2>Succulent Minipots</h2>
+                                <h2>SUCCULENT MINIPOTS</h2>
                                 <div class="succulentMinipots-grid grid"></div>
                             </div>  
                         </section>
 
-                        <section class="product-set" id="minipots" style="display: none;">
+                        <section class="product-set" id="shadowbox" style="display: none;">
                             <div class="product-items">
                                 <h2>Shadow Box</h2>
                                 <div class="shadowbox-grid grid"></div>
                             </div>
                         </section>
+                    </div>
+                <div class="navigation-buttons">
+                    <button id="prev-button" class="nav-button">Previous</button>
+                    <button id="next-button" class="nav-button">Next</button>
                 </div>
             </div> 
-
-            <div class="catalog-nav">
-                <button id="prev">←</button>
-                <button id="next">→</button>
-            </div>
         
               
-
-
             <!-- FOOTER SECTION  -->
 
             <footer class="footer">
