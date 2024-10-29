@@ -7,7 +7,7 @@
 
 .footer-content {
     display: flex;
-    background-color: #f1e0d6;
+    background: linear-gradient(to bottom, #f9f3f0, #FFDAC2);
     padding: 1.5rem 0;
     flex-wrap: wrap;
     justify-content: space-around;
