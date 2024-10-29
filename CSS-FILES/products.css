@@ -229,6 +229,20 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.facekeychain-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.facekeychain-grid p {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+#groot-h2 {
+    margin-top: 3rem;
+}
+
 /* The code below is for the scroll into view animation  */
 
 .hidden {

@@ -327,6 +327,16 @@ let shadowboxData = [{
     price: '159'
 }]
 
+let faceKeychainsData = [{
+    image: 'img/facekeychains/15.png',
+    name: 'Front Only',
+    price: '79'
+},{
+    image: 'img/facekeychains/14.png',
+    name: 'Front with Text on the Back',
+    price: '129'
+}]
+
 function generateHTML(gridSelector, data, className) {
     const grid = document.querySelector(gridSelector)
 
@@ -357,6 +367,7 @@ generateHTML('.sunflowerMinipots-grid', sunflowerMinipotsData, 'minipots-sets');
 generateHTML('.cactusMinipots-grid', cactusMinipotsData, 'minipots-sets');
 generateHTML('.succulentMinipots-grid', succulentMinipotsData, 'minipots-sets');
 generateHTML('.shadowbox-grid', shadowboxData, 'shadowbox-sets');
+generateHTML('.facekeychain-grid', faceKeychainsData, 'facekeychain-sets');
 
 
 
