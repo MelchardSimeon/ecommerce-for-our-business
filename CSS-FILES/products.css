@@ -29,7 +29,7 @@
 }
 
 .tab {
-    background: linear-gradient(135deg, #f9f5f0, #FFDAC2); /* Soft ivory to lavender blush */
+    background: linear-gradient(135deg, #f9f5f0, #c9bbc9); /* Soft ivory to lavender blush */
     color: #3e3a3a; /* Deep gray-brown for contrast */
     font-size: 0.9rem;
     font-weight: 600;
@@ -61,13 +61,13 @@
 }
   
 .tab:hover {
-    background: linear-gradient(135deg, #FFDAC2, #FFE0B2); /* Gentle lavender to mauve */
+    background: linear-gradient(135deg, #e8dff0, #b3a5b6); /* Gentle lavender to mauve */
     box-shadow: 0 10px 20px rgba(60, 58, 58, 0.3);
     transform: translateY(-3px);
 }
   
 .tab.active {
-    background: linear-gradient(135deg, #FFE0B2, #FFB3A1);   /* Soft plum to dusty purple */
+    background: linear-gradient(135deg, #d3c7db, #a693b7);   /* Soft plum to dusty purple */
     box-shadow: 0 6px 12px rgba(60, 58, 58, 0.15);
     transform: translateY(0);
     color: black; /* Light text for contrast */
@@ -115,7 +115,7 @@
 }
 
 .nav-button {
-    background: linear-gradient(135deg, #f9f5f0, #f1e0d6); /* Match navigation button gradient */
+    background: linear-gradient(135deg, #f9f5f0, #c9bbc9); /* Match navigation button gradient */
     color: #3e3a3a; /* Deep gray-brown for contrast */
     font-size: 0.8rem;
     font-weight: 600;

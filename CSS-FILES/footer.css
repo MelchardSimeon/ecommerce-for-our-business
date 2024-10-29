@@ -7,10 +7,15 @@
 
 .footer-content {
     display: flex;
-    background: linear-gradient(to bottom, #f9f3f0, #FFDAC2);
     padding: 1.5rem 0;
     flex-wrap: wrap;
     justify-content: space-around;
+    background: linear-gradient(to right, #f2c6c6, #f8d3d3, #d6c1c1);
+    color: #3e3a3a; /* Text color */
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem; /* Consistent with buttons */
+    opacity: 0.95; /* Soft transparency */
 }
 
 .footer-section {
