@@ -29,7 +29,7 @@
 }
 
 .tab {
-    background: linear-gradient(135deg, #f9f5f0, #c9bbc9); /* Soft ivory to lavender blush */
+    background: linear-gradient(135deg, #f9f5f0, #FFDAC2); /* Soft ivory to lavender blush */
     color: #3e3a3a; /* Deep gray-brown for contrast */
     font-size: 0.9rem;
     font-weight: 600;
@@ -111,11 +111,11 @@
     display: flex;
     justify-content: center; /* Distributes space evenly */
     gap: 2rem;
-    margin: 1.1rem; /* Space above the buttons */
+    padding: 1.5rem 0 5rem 0; /* Space above the buttons */
 }
 
 .nav-button {
-    background: linear-gradient(135deg, #f9f5f0, #c9bbc9); /* Match navigation button gradient */
+    background: linear-gradient(135deg, #f9f5f0, #FFDAC2); /* Match navigation button gradient */
     color: #3e3a3a; /* Deep gray-brown for contrast */
     font-size: 0.8rem;
     font-weight: 600;
@@ -168,7 +168,6 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: #f9f9f9;
     text-align: center;
     transition: transform 0.5s ease;
 }
@@ -182,13 +181,12 @@
     margin-bottom: 1rem;
 }
 
-.product-set h2{
+.product-set h2 {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 1rem;
     padding-top: 3rem;
-    background-color: #f9f9f9;
 }
 
 .price {
@@ -272,7 +270,7 @@
     }
 
     .tab {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding: 0.3rem 0.9rem;
     }
 }
