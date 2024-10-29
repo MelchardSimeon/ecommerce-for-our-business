@@ -61,16 +61,16 @@
 }
   
 .tab:hover {
-    background: linear-gradient(135deg, #e8dff0, #b3a5b6); /* Gentle lavender to mauve */
+    background: linear-gradient(135deg, #FFDAC2, #FFE0B2); /* Gentle lavender to mauve */
     box-shadow: 0 10px 20px rgba(60, 58, 58, 0.3);
     transform: translateY(-3px);
 }
   
 .tab.active {
-    background: linear-gradient(135deg, #d3c7db, #a693b7); /* Soft plum to dusty purple */
+    background: linear-gradient(135deg, #FFE0B2, #FFB3A1);   /* Soft plum to dusty purple */
     box-shadow: 0 6px 12px rgba(60, 58, 58, 0.15);
     transform: translateY(0);
-    color: #fdfdfd; /* Light text for contrast */
+    color: black; /* Light text for contrast */
 }
   
   /* Catalog Content Styles */
@@ -270,7 +270,7 @@
     }
 
     .tab {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         padding: 0.3rem 0.9rem;
     }
 }
