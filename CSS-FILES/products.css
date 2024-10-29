@@ -26,14 +26,12 @@
     margin-top: 6rem;
     padding-top: 2rem;
     border-radius: 16px; /* Slightly rounded corners for a modern feel */
-    background-color: #f9f9f9;
-    flex-wrap: wrap;
 }
 
-  .tab {
+.tab {
     background: linear-gradient(135deg, #f9f5f0, #c9bbc9); /* Soft ivory to lavender blush */
     color: #3e3a3a; /* Deep gray-brown for contrast */
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     padding: 0.6rem 1.2rem;
     border: none;
@@ -113,14 +111,13 @@
     display: flex;
     justify-content: center; /* Distributes space evenly */
     gap: 2rem;
-    margin: 2.1rem; /* Space above the buttons */
-
+    margin: 1.1rem; /* Space above the buttons */
 }
 
 .nav-button {
     background: linear-gradient(135deg, #f9f5f0, #c9bbc9); /* Match navigation button gradient */
     color: #3e3a3a; /* Deep gray-brown for contrast */
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     padding: 0.6rem 1.2rem;
     border: none;
@@ -168,7 +165,9 @@
     display: none;
     min-width: 100%;
     font-family: "cormorant", serif;
-    padding: 0.5rem 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: #f9f9f9;
     text-align: center;
     transition: transform 0.5s ease;
@@ -187,7 +186,9 @@
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    padding-top: 3rem;
+    background-color: #f9f9f9;
 }
 
 .price {
@@ -261,5 +262,17 @@
 
     .groot-grid img {
         max-width: 80vw;
+    }
+
+    .catalog-navigation {
+        margin-top: 5rem;
+        gap: 0.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .tab {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.9rem;
     }
 }

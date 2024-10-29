@@ -20,6 +20,7 @@ categoryButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
         currentCategoryIndex = index; // Set current category index
         showCurrentCategory(); // Show the selected category
+        scrollToProductSet(); // Scroll to the product set after changing category
     });
 });
 
@@ -30,11 +31,25 @@ const nextButton = document.getElementById('next-button');
 function nextCategory() {
     currentCategoryIndex = (currentCategoryIndex + 1) % totalCategories; // Loop back to the start
     showCurrentCategory();
+    scrollToProductSet(); // Scroll to the product set after changing category
 }
 
 function prevCategory() {
     currentCategoryIndex = (currentCategoryIndex - 1 + totalCategories) % totalCategories; // Loop to the end
     showCurrentCategory();
+    scrollToProductSet(); // Scroll to the product set after changing category
+}
+
+// Function to scroll to the product set section
+function scrollToProductSet() {
+    const productSetSection = document.querySelector('.catalog-navigation'); // Select the product set section
+    if (productSetSection) {
+        const sectionTop = productSetSection.getBoundingClientRect().top + window.scrollY; // Get the top position relative to the viewport
+        window.scrollTo({
+            top: sectionTop,
+            behavior: 'smooth' // Smooth scrolling
+        });
+    }
 }
 
 // Add event listeners for the next and previous buttons
