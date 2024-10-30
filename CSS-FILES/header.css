@@ -69,6 +69,11 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.sidebar-menu.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 .header-center {
     display: flex;
     flex: 2;
