@@ -10,7 +10,8 @@
     padding: 1.5rem 0;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: linear-gradient(to right, #f2c6c6, #f8d3d3, #d6c1c1);
+    background: #FFF8E5;
+
     color: #3e3a3a; /* Text color */
     padding: 1.5rem;
     text-align: center;

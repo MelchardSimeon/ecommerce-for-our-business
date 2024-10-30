@@ -1,0 +1,175 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+h2, h1 {
+    font-family: 'cormorant', sans-serif;
+}
+
+p {
+    font-family: 'raleway', sans-serif;
+}
+
+h3 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 550;
+}
+
+.footer h2 {
+    font-family: 'raleway', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+header.about-header {
+    background: url('../img/metalogo.jpg') no-repeat center center/cover;
+    height: 50vh;
+    position: relative;
+    color: #fff;
+}
+
+header.about-header .header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header.about-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2::after {
+    content: '';
+    width: 40px;
+    height: 4px;
+    background: #ff5e5e;
+    display: block;
+    margin: 8px auto;
+    border-radius: 2px;
+}
+
+.our-story h2,
+.our-values h2,
+.meet-the-founders h2,
+.our-products h2,
+.testimonials h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.our-story p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.our-values .values-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.value-card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.value-card h3 {
+    font-size: 1.2rem;
+    color: #222;
+    word-wrap: break-word;
+}
+
+.meet-the-founders .founders-carousel {
+    display: flex;
+    scroll-snap-type: mandatory;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-top: 1rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.founder-card {
+    min-width: 150px;
+    text-align: center;
+    scroll-snap-align: start;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.founder-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.our-products .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.product-link {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.product-link:hover {
+    background: #555;
+}
+
+.testimonials .testimonial-slider blockquote {
+    font-style: italic;
+    padding: 1rem;
+}
+
+.melchard {
+    object-position: top;
+}
+
+
+@media (max-width: 768px) {
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+
+    .founder-card img {
+        width: 150px;
+        height: 150px;
+    }
+}

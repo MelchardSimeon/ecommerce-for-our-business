@@ -1,0 +1,103 @@
+/* Reset & Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.contact-header {
+    background: #ECFFEF;
+    color: black;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+}
+
+.contact-header p {
+    margin-top: 0.5rem;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #C2E7E2;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff7878;
+}
+
+/* Contact Information Section */
+.contact-info-section {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: #f4f4f9;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Social Media Section */
+.social-media-section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.social-media-links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ff7878;
+}

@@ -23,13 +23,13 @@
     text-align: center;
     justify-content: center;
     margin-top: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .dot {
     display: inline-block;
-    height: 0.938rem;
-    width: 0.938rem;
+    height: 0.8rem;
+    width: 0.8rem;
     margin: 0 0.313rem;
     background-color: #ccc;
     border-radius: 50%;
@@ -52,7 +52,7 @@
 }
 
 .tab {
-    background: linear-gradient(135deg, #f9f5f0, #c9bbc9); /* Soft ivory to lavender blush */
+    background: linear-gradient(135deg, #B8C9B2, #A1B3A0);
     color: #3e3a3a; /* Deep gray-brown for contrast */
     font-size: 0.9rem;
     font-weight: 600;
@@ -84,7 +84,7 @@
 }
   
 .tab:hover {
-    background: linear-gradient(135deg, #e8dff0, #b3a5b6); /* Gentle lavender to mauve */
+    background: linear-gradient(135deg, #A1B3A0, #8C9B8A); /* Gentle lavender to mauve */
     box-shadow: 0 10px 20px rgba(60, 58, 58, 0.3);
     transform: translateY(-3px);
 }
@@ -138,7 +138,7 @@
 }
 
 .nav-button {
-    background: linear-gradient(135deg, #f9f5f0, #c9bbc9); /* Match navigation button gradient */
+    background-color: #B8C9B2;
     color: #3e3a3a; /* Deep gray-brown for contrast */
     font-size: 0.8rem;
     font-weight: 600;
@@ -193,6 +193,10 @@
     padding-bottom: 0.5rem;
     text-align: center;
     transition: transform 0.5s ease;
+}
+
+#specialh2 {
+    margin-top: 0;
 }
 
 .product-set.active {
