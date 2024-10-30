@@ -113,7 +113,6 @@ section h2::after {
 
 .meet-the-founders .founders-carousel {
     display: flex;
-    scroll-snap-type: mandatory;
     gap: 1rem;
     overflow-x: auto;
     padding-top: 1rem;
