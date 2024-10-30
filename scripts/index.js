@@ -289,11 +289,11 @@ let succulentMinipotsData = [{
     price: '129'
 },{
     image: 'img/minipots/25.png',
-    name: 'Pink',
+    name: 'Beige',
     price: '129'
 },{
     image: 'img/minipots/26.png',
-    name: 'Cyan',
+    name: 'Moss Green',
     price: '129'
 },{
     image: 'img/minipots/27.png',
@@ -301,7 +301,7 @@ let succulentMinipotsData = [{
     price: '129'
 },{
     image: 'img/minipots/28.png',
-    name: 'Dirty White',
+    name: 'Pink',
     price: '129'
 },{
     image: 'img/minipots/29.png',
@@ -309,7 +309,7 @@ let succulentMinipotsData = [{
     price: '129'
 },{
     image: 'img/minipots/30.png',
-    name: 'Gray',
+    name: 'Red',
     price: '129'
 }]
 
