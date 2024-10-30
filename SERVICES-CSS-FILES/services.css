@@ -14,7 +14,7 @@ body {
 
 /* Header Section */
 .services-header {
-    background: linear-gradient(to right, #ff5e5e, #ff9a5e, #ffd05e);
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
     color: black;
     /* background: linear-gradient(to right, #D19A9A, #EAB8B8); */
     padding: 2rem 1rem;
