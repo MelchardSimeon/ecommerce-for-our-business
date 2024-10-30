@@ -101,3 +101,7 @@ button:hover {
 .social-media-links a:hover {
     color: #ff7878;
 }
+
+@media (max-width: 768px) {
+    
+}

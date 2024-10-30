@@ -172,4 +172,8 @@ section h2::after {
         width: 150px;
         height: 150px;
     }
+
+    .header-wrapper {
+        display: none;
+    }
 }

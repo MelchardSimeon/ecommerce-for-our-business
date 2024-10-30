@@ -1,0 +1,90 @@
+/* Reset & Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.services-header {
+    background: linear-gradient(to right, #ff5e5e, #ff9a5e, #ffd05e);
+    color: black;
+    /* background: linear-gradient(to right, #D19A9A, #EAB8B8); */
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* .text-gradient {
+    background-image: linear-gradient(to right, #FFD700, #FF4500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem; 
+} */
+
+.services-header h1 {
+    font-size: 2.5rem;
+}
+
+.services-header p {
+    margin-top: 0.5rem;
+}
+
+/* Services Container */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 1.5rem; /* Space between service cards */
+}
+
+/* Service Card */
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Set max width */
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    color: #ff5e5e;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #FFD700, #FF4500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.service-card p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Hover Effect for Service Cards */
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        display: none;
+    }
+}
