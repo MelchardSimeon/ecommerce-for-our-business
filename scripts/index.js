@@ -126,7 +126,7 @@ let onepieceKeychainData = [{
     price: '59'
 }, {
     image: 'img/Onepiece-keychains/Zorro.png',
-    name: 'Zorro',
+    name: 'Zoro',
     price: '59'
 }, {
     image: 'img/Onepiece-keychains/Sanji.png',
