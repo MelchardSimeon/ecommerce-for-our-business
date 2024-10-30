@@ -63,6 +63,12 @@
   box-shadow: none; /* Remove any focus outline/shadow */
 }
 
+.sidebar-menu {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
 .header-center {
     display: flex;
     flex: 2;
