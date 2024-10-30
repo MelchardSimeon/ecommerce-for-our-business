@@ -17,10 +17,14 @@ openSidebar.addEventListener('click', () => {
         sidebarMenu.style.transform = 'translateX(0)';
         sidebarMenu.style.opacity = '1';
         overlay.style.display = 'block';
+
+        document.body.style.overflow = 'hidden'
     } else {
         sidebarMenu.style.transform = 'translateX(-100%)';
         sidebarMenu.style.opacity = '0';
         overlay.style.display = 'none';
+
+        document.body.style.overflow = '';
     }
 });
 
@@ -46,6 +50,7 @@ overlay.addEventListener('click', () => {
 
     setTimeout(() => {
         overlay.style.opacity = '0'
+        
         document.body.style.overflow = '';
     }, 300)
 })
