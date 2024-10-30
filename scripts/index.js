@@ -47,17 +47,17 @@ let fourSeasonsSetData = [{
     name: 'Spring',
     price: 699
 }, {
-    image: 'img/bouquet sets/2.png',
-    name: 'Summer',
-    price: 699
+    image: 'img/bouquet sets/4.png',
+    name: 'Autumn',
+    price: 679
 }, {
     image: 'img/bouquet sets/3.png',
     name: 'Winter',
     price: 629
 }, {
-    image: 'img/bouquet sets/4.png',
-    name: 'Autumn',
-    price: 679
+    image: 'img/bouquet sets/2.png',
+    name: 'Summer',
+    price: 699
 }]
 
 
