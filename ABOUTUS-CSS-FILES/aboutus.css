@@ -86,18 +86,21 @@ section h2::after {
     color: #555;
 }
 
-.our-values .values-container {
-    display: flex;
-    justify-content: space-around;
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding-top: 1rem;
+    align-items: stretch; /* Ensures items stretch vertically */
+    justify-items: stretch; /* Ensures items stretch horizontally */
 }
+
 
 .value-card {
     background: #f9f9f9;
     padding: 1rem;
     border-radius: 8px;
-    width: 30%;
+    width: 100%;
     text-align: center;
     overflow: hidden;
 }
