@@ -67,10 +67,10 @@ body {
     font-size: 1.5rem;
     color: #ff5e5e;
     margin-top: 1rem;
-    /* background-image: linear-gradient(to right, #FFD700, #FF4500);
+    background-image: linear-gradient(135deg, #9e1b1b, #d94f2e, #ff7e00, #ffcc00);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; */
+    color: transparent;
 }
 
 .service-card p {

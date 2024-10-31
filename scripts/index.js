@@ -115,7 +115,7 @@ let pokemonData = [{
     name: 'Charmander',
     price: '59'
 }, {
-    image: 'img/pokemon/e.png',
+    image: 'img/pokemon/f.png',
     name: 'Pickachu',
     price: '59'
 }]
