@@ -1,14 +1,64 @@
-#search-button {
+#search-button-right {
+    display: flex;
     padding: 0;
     border: none;
     background: none;
     outline: none;
     cursor: pointer; 
-    display: block;
 }
 
-#search-button-right {
-    display: none;
+/* Search button styles */
+.search-toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px; /* Adjust padding */
+    transition: transform 0.3s; /* Add a smooth transition */
+}
+
+.search-toggle-button:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+/* Search container styles */
+#search-container {
+    display: none; /* Hide by default */
+    align-items: center; /* Center items vertically */
+    margin-left: 10px; /* Space between button and search container */
+}
+
+/* Search input styles */
+#search-input {
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 8px 15px; /* Add padding */
+    font-size: 16px; /* Font size */
+    width: 200px; /* Fixed width */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+/* Change border color on focus */
+#search-input:focus {
+    border-color: #5f6368; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit button styles */
+#submit-search {
+    background-color: #5f6368; /* Match the header color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 8px 15px; /* Add padding */
+    cursor: pointer; /* Pointer cursor */
+    margin-left: 5px; /* Space between input and button */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+/* Change background color on hover */
+#submit-search:hover {
+    background-color: #3e3e3e; /* Darker shade on hover */
 }
 
 .wishlist-icon {
@@ -88,6 +138,7 @@
     outline: none;
     gap: 1.25rem;
     align-items: center;
+    position: relative;
 }
 
 .header-right:hover {
@@ -105,11 +156,6 @@
 
 
 @media(max-width: 768px) {
-
-    #search-button {
-        display: none;
-    }
-
     .wishlist-icon {
         display: none;
     }
@@ -127,12 +173,16 @@
         padding-right: 0.5rem;
     }
 
-    #search-button-right {
-        display: flex;
-        padding: 0;
-        border: none;
-        background: none;
-        outline: none;
-        cursor: pointer; 
+    /* Overlay styles */
+    #search-container {
+        position: absolute; /* Positioning for overlay effect */
+        top: 60px; /* Adjust to fit below the header */
+        right: 20px; /* Align to the right */
+        background-color: white; /* Background color */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        padding: 10px; /* Add padding */
+        z-index: 1000; /* Ensure it's above other elements */
     }
+
 }
