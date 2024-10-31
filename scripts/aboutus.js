@@ -3,6 +3,15 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
+const handleMove = (e, isTouch = false) => {
+    if (!isDown) return;
+    e.preventDefault();
+
+    const x = (isTouch ? e.touches[0].pageX : e.pageX) - foundersCarousel.offsetLeft;
+    const walk = (x - startX) * 1.5; // Fine-tune as needed
+    foundersCarousel.scrollLeft = scrollLeft - walk;
+};
+
 foundersCarousel.addEventListener('mousedown', (e) => {
     isDown = true;
     foundersCarousel.classList.add('active');
@@ -22,10 +31,7 @@ foundersCarousel.addEventListener('mouseup', () => {
 
 foundersCarousel.addEventListener('mousemove', (e) => {
     if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - foundersCarousel.offsetLeft;
-    const walk = (x - startX) * 1.5; // scroll-fast
-    foundersCarousel.scrollLeft = scrollLeft - walk;
+    requestAnimationFrame(() => handleMove(e));
 });
 
 // Touch events for mobile devices
@@ -41,7 +47,5 @@ foundersCarousel.addEventListener('touchend', () => {
 
 foundersCarousel.addEventListener('touchmove', (e) => {
     if (!isDown) return;
-    const x = e.touches[0].pageX - foundersCarousel.offsetLeft;
-    const walk = (x - startX) * 1.5; // scroll-fast
-    foundersCarousel.scrollLeft = scrollLeft - walk;
+    requestAnimationFrame(() => handleMove(e, true));
 });
