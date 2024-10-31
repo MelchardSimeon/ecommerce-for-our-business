@@ -42,12 +42,13 @@ const searchContainer = document.getElementById('search-container');
 const searchInput = document.getElementById('search-input');
 const submitSearch = document.getElementById('submit-search');
 
-searchButton.addEventListener('click', () => {
-    if (searchContainer.style.display === 'none' || searchContainer.style.display === '') {
-        searchContainer.style.display = 'flex';
+searchButton.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent click from propagating to document
+    if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
+        searchContainer.style.display = "flex"; 
         searchInput.focus();
     } else {
-        searchContainer.style.display = 'none';
+        searchContainer.style.display = "none";
     }
 });
 
@@ -80,3 +81,9 @@ function displaySearchResults(results) {
     // Append results to the body or a specific container
     document.body.appendChild(resultsContainer); // Adjust as needed
 }
+
+document.addEventListener("click", (event) => {
+    if (!searchContainer.contains(event.target) && !searchButton.contains(event.target)) {
+        searchContainer.style.display = "none";
+    }
+});
