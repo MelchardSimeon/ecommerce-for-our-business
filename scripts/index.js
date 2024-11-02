@@ -314,16 +314,40 @@ let succulentMinipotsData = [{
 }]
 
 let shadowboxData = [{
-    image: 'img/shadowbox/2.png',
+    image: 'img/shadowbox/1.png',
     name: 'Sunflower',
     price: '159'
 },{
-    image: 'img/shadowbox/3.png',
+    image: 'img/shadowbox/2.png',
     name: 'Rose',
     price: '159'
 },{
-    image: 'img/shadowbox/4.png',
+    image: 'img/shadowbox/3.png',
     name: 'Poppy',
+    price: '159'
+},{
+    image: 'img/shadowbox/4.png',
+    name: 'Daisy (Pink)',
+    price: '159'
+},{
+    image: 'img/shadowbox/5.png',
+    name: 'Daisy (Purple)',
+    price: '159'
+},{
+    image: 'img/shadowbox/6.png',
+    name: 'Daisy (White)',
+    price: '159'
+},{
+    image: 'img/shadowbox/7.png',
+    name: 'Gumamela',
+    price: '159'
+},{
+    image: 'img/shadowbox/8.png',
+    name: 'Tulip',
+    price: '159'
+},{
+    image: 'img/shadowbox/9.png',
+    name: 'Calla lily',
     price: '159'
 }]
 
