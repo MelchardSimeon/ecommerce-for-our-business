@@ -73,3 +73,58 @@ prevButton.addEventListener('click', prevCategory);
 
 // Initial call to set the first product set visible
 showCurrentCategory();
+
+
+// NEW FUNCTION TO SWIPE NAVIGATIONS TABS LEFT AND RIGHT 
+
+const catalogNavigation = document.querySelector('.catalog-navigation');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+const handleMove = (e, isTouch = false) => {
+    if (!isDown) return;
+    e.preventDefault();
+
+    const x = (isTouch ? e.touches[0].pageX : e.pageX) - catalogNavigation.offsetLeft;
+    const walk = (x - startX) * 1.5; // Fine-tune as needed
+    catalogNavigation.scrollLeft = scrollLeft - walk;
+};
+
+catalogNavigation.addEventListener('mousedown', (e) => {
+    isDown = true;
+    catalogNavigation.classList.add('active');
+    startX = e.pageX - catalogNavigation.offsetLeft;
+    scrollLeft = catalogNavigation.scrollLeft;
+});
+
+catalogNavigation.addEventListener('mouseleave', () => {
+    isDown = false;
+    catalogNavigation.classList.remove('active');
+});
+
+catalogNavigation.addEventListener('mouseup', () => {
+    isDown = false;
+    catalogNavigation.classList.remove('active');
+});
+
+catalogNavigation.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    requestAnimationFrame(() => handleMove(e));
+});
+
+// Touch events for mobile devices
+catalogNavigation.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.touches[0].pageX - catalogNavigation.offsetLeft;
+    scrollLeft = catalogNavigation.scrollLeft;
+});
+
+catalogNavigation.addEventListener('touchend', () => {
+    isDown = false;
+});
+
+catalogNavigation.addEventListener('touchmove', (e) => {
+    if (!isDown) return;
+    requestAnimationFrame(() => handleMove(e, true));
+});
