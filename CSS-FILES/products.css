@@ -324,7 +324,7 @@
         display: flex;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        padding: 2rem 1rem 0.5rem 1rem;
+        padding: 2rem 1rem 1rem 1rem;
         border-radius: 16px;
         margin: 6rem auto 0 auto;
         justify-content: flex-start;
@@ -338,11 +338,26 @@
 }
 
 @media (hover: none) {
-    .tab:hover::before,
+    .tab::before {
+        display: none;
+    }
+
     .tab:hover {
         transform: none;
         box-shadow: 0 8px 16px rgba(60, 58, 58, 0.2); /* Original shadow */
         background: linear-gradient(135deg, #B8C9B2, #A1B3A0); /* Original color */
         color: #3e3a3a; /* Original color */
     }
+
+    .tab.active {
+        background: linear-gradient(135deg, #6C9F6A, #5A8E73);
+        box-shadow: 0 6px 12px rgba(60, 58, 58, 0.15);
+        color: black;
+        border-bottom: 3px solid black; /* Brown for active highlight */
+    }
+    
+    .tab:active {
+        transform: translateY(2px); /* Subtle pressed effect */
+    }
+    
 }
