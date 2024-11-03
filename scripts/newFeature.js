@@ -53,8 +53,6 @@ function prevCategory() {
     scrollToProductSet(); // Scroll to the product set after changing category
 }
 
-
-
 // Function to scroll to the product set section
 function scrollToProductSet() {
     const productSetSection = document.querySelector('.catalog-navigation'); // Select the product set section
@@ -130,8 +128,46 @@ catalogNavigation.addEventListener('touchmove', (e) => {
 });
 
 
-// THIS FUNCTION IS TO MAKE CATALOG-NAVIGATION STICK TO THE SCREEN
+// THIS FUNCTION ENABLES SWIPING THE PRODUCT SETS FROM LEFT TO RIGHT
 
+const productSetContainer = document.querySelector('.catalog-track'); // Use the container holding the product sets
+let startXSet, endXSet;
 
+const handleProductSetSwipe = () => {
+    const swipeThreshold = 50; // Minimum swipe distance in pixels
+
+    if (endXSet < startXSet - swipeThreshold) {
+        // Swipe left
+        nextCategory(); // Show the next category
+    } else if (endXSet > startXSet + swipeThreshold) {
+        // Swipe right
+        prevCategory(); // Show the previous category
+    }
+};
+
+// Touch events for swiping the product sets
+productSetContainer.addEventListener('touchstart', (e) => {
+    startXSet = e.touches[0].clientX; // Record starting position
+});
+
+productSetContainer.addEventListener('touchend', (e) => {
+    endXSet = e.changedTouches[0].clientX; // Record ending position
+    handleProductSetSwipe(); // Check for swipe direction
+});
+
+// Optionally, handle mouse swiping as well
+productSetContainer.addEventListener('mousedown', (e) => {
+    startXSet = e.clientX; // Record starting position for mouse
+});
+
+productSetContainer.addEventListener('mouseup', (e) => {
+    endXSet = e.clientX; // Record ending position for mouse
+    handleProductSetSwipe(); // Check for swipe direction
+});
+
+// Optional: handle mouse leave
+productSetContainer.addEventListener('mouseleave', () => {
+    // Reset on mouse leave if needed
+});
 
 
