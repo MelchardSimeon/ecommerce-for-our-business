@@ -128,3 +128,10 @@ catalogNavigation.addEventListener('touchmove', (e) => {
     if (!isDown) return;
     requestAnimationFrame(() => handleMove(e, true));
 });
+
+
+// THIS FUNCTION IS TO MAKE CATALOG-NAVIGATION STICK TO THE SCREEN
+
+
+
+

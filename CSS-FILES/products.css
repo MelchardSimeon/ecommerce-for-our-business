@@ -320,6 +320,14 @@
         max-width: 80vw;
     }
 
+    .catalog-container {
+        position: relative;
+    }
+    
+    .catalog-track {
+        position: relative;
+    }
+
     .catalog-navigation {
         display: flex;
         overflow-x: auto;
@@ -328,11 +336,13 @@
         border-radius: 16px;
         margin: 6rem auto 0 auto;
         justify-content: flex-start;
+        position: sticky;
+        top: 0;
     }
 
     .tab {
         flex: 0 0 auto;
-        font-size: 1rem;
+        font-size: 0.7rem;
         padding: 10px 15px;
     }
 }
@@ -359,5 +369,4 @@
     .tab:active {
         transform: translateY(2px); /* Subtle pressed effect */
     }
-    
 }
