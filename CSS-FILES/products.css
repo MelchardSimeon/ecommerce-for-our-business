@@ -204,7 +204,6 @@
 .product-set {
     flex: 0 0 100%;
     scroll-snap-align: start;
-
     min-width: 100%;
     font-family: "cormorant", serif;
     padding-left: 0.5rem;
@@ -343,8 +342,6 @@
         border-radius: 16px;
         margin: 6rem auto 0 auto;
         justify-content: flex-start;
-        position: sticky;
-        top: 0;
     }
 
     .tab {
