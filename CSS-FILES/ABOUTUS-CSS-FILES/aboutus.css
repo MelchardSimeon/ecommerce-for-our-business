@@ -29,7 +29,7 @@ body {
 }
 
 header.about-header {
-    background: url('../img/metalogo.jpg') no-repeat center center/cover;
+    background: url('../../img/metalogo.jpg') no-repeat center center/cover;
     height: 50vh;
     position: relative;
     color: #fff;

@@ -6,6 +6,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h2, h1 {
+    font-family: 'cormorant', sans-serif;
+}
+
+p {
+    font-family: 'raleway', sans-serif;
+}
+
 body {
     background-color: #fafafa;
     color: #333;
