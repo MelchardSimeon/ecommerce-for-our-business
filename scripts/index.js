@@ -1,4 +1,22 @@
 
+const  forHimData = [{
+    image: 'img/forHim/1.png',
+    name: 'Royalty',
+    price: 899
+}, {
+    image: 'img/forHim/2.png',
+    name: 'Cedar',
+    price: 899
+}, {
+    image: 'img/forHim/3.png',
+    name: 'Phantom',
+    price: 899
+}, {
+    image: 'img/forHim/4.png',
+    name: 'Midnight',
+    price: 899
+}
+]
 const onePieceSetData = [{
     image: 'img/1.png',
     name: 'Luffy Set',
@@ -87,20 +105,23 @@ let randomSetsData = [{
 let passionFelicityData = [{
     image: 'img/passion-felicity/1.png',
     name: 'Passion',
-    price: '599'
+    price: '499'
 }, {
     image: 'img/passion-felicity/2.png',
     name: 'Felicity',
-    price: '599'
+    price: '499'
 }, {
     image: 'img/passion-felicity/3.png',
     name: 'Euphoria',
-    price: '599'
+    price: '499'
 }, {
     image: 'img/passion-felicity/4.png',
     name: 'Iris',
-    price: '599'
+    price: '499'
 }]
+
+
+
 
 let pokemonData = [{
     image: 'img/pokemon/c.png',
@@ -123,72 +144,72 @@ let pokemonData = [{
 let onepieceKeychainData = [{
     image: 'img/Onepiece-keychains/Luffy.png',
     name: 'Luffy',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/Onepiece-keychains/Zorro.png',
     name: 'Zoro',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/Onepiece-keychains/Sanji.png',
     name: 'Sanji',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/Onepiece-keychains/Brook.png',
     name: 'Brook',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/Onepiece-keychains/Chopper.png',
     name: 'Chopper',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/Onepiece-keychains/Blackbeard.png',
     name: 'Blackbeard',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/Onepiece-keychains/Whitebeard.png',
     name: 'Whitebeard',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/Onepiece-keychains/Shanks.png',
     name: 'Shanks',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/Onepiece-keychains/Law.png',
     name: 'Law',
-    price: '59'
+    price: '85'
 }]
 
 let carBrandData = [{
     image: 'img/carbrands/honda.png',
     name: 'Honda',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/carbrands/mazda.png',
     name: 'Mazda',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/carbrands/toyota.png',
     name: 'Toyota',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/carbrands/mitsubishi.png',
     name: 'Mitsubishi',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/carbrands/hyundai.png',
     name: 'Hyundai',
-    price: '59'
+    price: '85'
 }, {
     image: 'img/carbrands/bmw.png',
     name: 'BMW',
-    price: '59'
+    price: '85'
 }]
 
 
 let grootData = [{
     image: 'img/otherKeychains/Groot.png',
     name: 'Groot',
-    price: '59'
+    price: '69'
 }]
 
 let sunflowerMinipotsData = [{
@@ -354,7 +375,7 @@ let shadowboxData = [{
 let faceKeychainsData = [{
     image: 'img/facekeychains/15.png',
     name: 'Front Only',
-    price: '79'
+    price: '99'
 },{
     image: 'img/facekeychains/14.png',
     name: 'Front with Text on the Back',
@@ -392,6 +413,7 @@ generateHTML('.cactusMinipots-grid', cactusMinipotsData, 'minipots-sets');
 generateHTML('.succulentMinipots-grid', succulentMinipotsData, 'minipots-sets');
 generateHTML('.shadowbox-grid', shadowboxData, 'shadowbox-sets');
 generateHTML('.facekeychain-grid', faceKeychainsData, 'facekeychain-sets');
+generateHTML('.forHim-grid', forHimData, 'forHim-sets');
 
 
 

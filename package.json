@@ -1,0 +1,14 @@
+{
+  "name": "ecommerce-for-our-business",
+  "version": "1.0.0",
+  "description": "This is my first e-commerce project. I'm building this website for our business. It's also my first time connecting a web project to a database using a backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Melchard Simeon",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
