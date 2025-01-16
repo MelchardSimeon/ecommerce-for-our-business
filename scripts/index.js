@@ -118,11 +118,11 @@ let passionFelicityData = [{
     price: '699'
 }, {
     image: 'img/petalpalette/3.png',
-    name: 'Euphoria',
+    name: 'Iris',
     price: '699'
 }, {
     image: 'img/petalpalette/4.png',
-    name: 'Iris',
+    name: 'Euphoria',
     price: '699'
 }]
 
