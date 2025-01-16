@@ -6,122 +6,135 @@ const  forHimData = [{
 }, {
     image: 'img/forHim/2.png',
     name: 'Cedar',
-    price: 899
+    price: 869
 }, {
     image: 'img/forHim/3.png',
     name: 'Phantom',
-    price: 899
+    price: 849
 }, {
     image: 'img/forHim/4.png',
     name: 'Midnight',
-    price: 899
-}
-]
+    price: 799
+}]
+
+const disneyData = [{
+    image: 'img/disney/1.png',
+    name: 'Rapunzel',
+    price: 949
+}, {
+    image: 'img/disney/2.png',
+    name: 'Moana',
+    price: 949
+}]
+
 const onePieceSetData = [{
     image: 'img/1.png',
     name: 'Luffy Set',
-    price: 899
+    price: 1299
 }, {
     image: 'img/2.png',
     name: 'Zorro Set',
-    price: 899
+    price: 1299
 }, {
     image: 'img/3.png',
     name: 'Sanji Set',
-    price: 899
+    price: 1299
 }, {
     image: 'img/4.png',
     name: 'Nami Set',
-    price: 899
+    price: 1099
 }, {
     image: 'img/5.png',
     name: 'Chopper Set',
-    price: 899
+    price: 1099
 }, {
     image: 'img/6.png',
     name: 'Robin Set',
-    price: 899
+    price: 1199
 }, {
     image: 'img/7.png',
     name: 'Brook Set',
-    price: 899
+    price: 999
 }, {
     image: 'img/8.png',
     name: 'Franky Set',
-    price: 899
+    price: 999
 }, {
     image: 'img/9.png',
     name: 'Jinbei Set',
-    price: 899
+    price: 999
 }, {
     image: 'img/10.png',
     name: 'Soge King Set',
-    price: 899
+    price: 999
 }]
 
 
 let fourSeasonsSetData = [{
     image: 'img/bouquet sets/1.png',
     name: 'Spring',
-    price: 699
+    price: 899
 }, {
     image: 'img/bouquet sets/4.png',
     name: 'Autumn',
-    price: 679
+    price: 879
 }, {
     image: 'img/bouquet sets/3.png',
     name: 'Winter',
-    price: 629
+    price: 829
 }, {
     image: 'img/bouquet sets/2.png',
     name: 'Summer',
-    price: 699
+    price: 899
 }]
 
 
 let randomSetsData = [{
     image: 'img/random-sets/1.png',
     name:'Blossom',
-    price: 649
-}, {
-    image: 'img/random-sets/2.png',
-    name:'Black Pink',
-    price: 649
+    price: 849
 }, {
     image: 'img/random-sets/3.png',
-    name:'Amethyst',
-    price: 699
+    name:'Mystique',
+    price: 869
 }, {
     image: 'img/random-sets/4.png',
     name:'Bad Blood',
-    price: 649
+    price: 799
 }, {
     image: 'img/random-sets/5.png',
     name:'Sunflower',
-    price: 699
+    price: 899
 }]
 
 
 let passionFelicityData = [{
     image: 'img/passion-felicity/1.png',
     name: 'Passion',
-    price: '499'
+    price: '699'
 }, {
     image: 'img/passion-felicity/2.png',
     name: 'Felicity',
-    price: '499'
+    price: '699'
 }, {
     image: 'img/passion-felicity/3.png',
     name: 'Euphoria',
-    price: '499'
+    price: '699'
 }, {
     image: 'img/passion-felicity/4.png',
     name: 'Iris',
-    price: '499'
+    price: '699'
 }]
 
-
-
+const newReleasesData = [{
+    image: 'img/newreleases/21.png',
+    name: 'Amethyst',
+    price: '1299'
+}, {
+    image: 'img/newreleases/30.png',
+    name: 'Felicity',
+    price: '999'
+}]
 
 let pokemonData = [{
     image: 'img/pokemon/c.png',
@@ -398,8 +411,6 @@ function generateHTML(gridSelector, data, className) {
 }
 
 
-
-
 generateHTML('.onepiece-grid', onePieceSetData, 'onepiece-sets');
 generateHTML('.fourseasons-grid', fourSeasonsSetData, 'four-seasons');
 generateHTML('.randomproducts-grid', randomSetsData, 'random-sets');
@@ -414,7 +425,8 @@ generateHTML('.succulentMinipots-grid', succulentMinipotsData, 'minipots-sets');
 generateHTML('.shadowbox-grid', shadowboxData, 'shadowbox-sets');
 generateHTML('.facekeychain-grid', faceKeychainsData, 'facekeychain-sets');
 generateHTML('.forHim-grid', forHimData, 'forHim-sets');
-
+generateHTML('.disney-grid', disneyData, 'disney-sets' );
+generateHTML('.new-releases-grid', newReleasesData, 'new-releases-sets' )
 
 
 
