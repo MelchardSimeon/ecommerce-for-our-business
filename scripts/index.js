@@ -42,7 +42,7 @@ const onePieceSetData = [{
 }, {
     image: 'img/4.png',
     name: 'Nami Set',
-    price: 1099
+    price: 1049
 }, {
     image: 'img/5.png',
     name: 'Chopper Set',
@@ -54,15 +54,15 @@ const onePieceSetData = [{
 }, {
     image: 'img/7.png',
     name: 'Brook Set',
-    price: 999
+    price: 929
 }, {
     image: 'img/8.png',
     name: 'Franky Set',
-    price: 999
+    price: 929
 }, {
     image: 'img/9.png',
     name: 'Jinbei Set',
-    price: 999
+    price: 1099
 }, {
     image: 'img/10.png',
     name: 'Soge King Set',
