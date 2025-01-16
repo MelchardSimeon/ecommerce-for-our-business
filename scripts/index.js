@@ -28,100 +28,100 @@ const disneyData = [{
 }]
 
 const onePieceSetData = [{
-    image: 'img/1.png',
+    image: 'img/onepiece/1.png',
     name: 'Luffy Set',
     price: 1299
 }, {
-    image: 'img/2.png',
+    image: 'img/onepiece/2.png',
     name: 'Zorro Set',
     price: 1299
 }, {
-    image: 'img/3.png',
+    image: 'img/onepiece/3.png',
     name: 'Sanji Set',
     price: 1299
 }, {
-    image: 'img/4.png',
+    image: 'img/onepiece/4.png',
     name: 'Nami Set',
     price: 1049
 }, {
-    image: 'img/5.png',
+    image: 'img/onepiece/5.png',
     name: 'Chopper Set',
     price: 1099
 }, {
-    image: 'img/6.png',
+    image: 'img/onepiece/6.png',
     name: 'Robin Set',
     price: 1199
 }, {
-    image: 'img/7.png',
+    image: 'img/onepiece/7.png',
     name: 'Brook Set',
     price: 929
 }, {
-    image: 'img/8.png',
+    image: 'img/onepiece/8.png',
     name: 'Franky Set',
     price: 929
 }, {
-    image: 'img/9.png',
+    image: 'img/onepiece/9.png',
     name: 'Jinbei Set',
     price: 1099
 }, {
-    image: 'img/10.png',
+    image: 'img/onepiece/10.png',
     name: 'Soge King Set',
     price: 999
 }]
 
 
 let fourSeasonsSetData = [{
-    image: 'img/bouquet sets/1.png',
+    image: 'img/fourseasons/1.png',
+    name: 'Summer',
+    price: 899
+}, {
+    image: 'img/fourseasons/2.png',
     name: 'Spring',
     price: 899
 }, {
-    image: 'img/bouquet sets/4.png',
+    image: 'img/fourseasons/3.png',
     name: 'Autumn',
     price: 879
 }, {
-    image: 'img/bouquet sets/3.png',
+    image: 'img/fourseasons/4.png',
     name: 'Winter',
     price: 829
-}, {
-    image: 'img/bouquet sets/2.png',
-    name: 'Summer',
-    price: 899
 }]
 
 
 let randomSetsData = [{
-    image: 'img/random-sets/1.png',
-    name:'Blossom',
-    price: 849
+    image: 'img/vibrantbliss/1.png',
+    name:'Sunflower',
+    price: 899
 }, {
-    image: 'img/random-sets/3.png',
+    image: 'img/vibrantbliss/2.png',
     name:'Mystique',
     price: 869
 }, {
-    image: 'img/random-sets/4.png',
+    image: 'img/vibrantbliss/3.png',
+    name:'Blossom',
+    price: 849
+}, {
+    image: 'img/vibrantbliss/4.png',
     name:'Bad Blood',
     price: 799
-}, {
-    image: 'img/random-sets/5.png',
-    name:'Sunflower',
-    price: 899
 }]
 
 
 let passionFelicityData = [{
-    image: 'img/passion-felicity/1.png',
+    image: 'img/petalpalette/1.png',
     name: 'Passion',
     price: '699'
 }, {
-    image: 'img/passion-felicity/2.png',
+    image: 'img/petalpalette/2.png',
     name: 'Felicity',
     price: '699'
 }, {
-    image: 'img/passion-felicity/3.png',
+    image: 'img/petalpalette/3.png',
     name: 'Euphoria',
     price: '699'
 }, {
-    image: 'img/passion-felicity/4.png',
+    image: 'img/petalpalette/4.png',
     name: 'Iris',
     price: '699'
 }]
