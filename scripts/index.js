@@ -132,7 +132,7 @@ const newReleasesData = [{
     price: '1299'
 }, {
     image: 'img/newreleases/30.png',
-    name: 'Felicity',
+    name: 'Sun Burst',
     price: '999'
 }]
 
