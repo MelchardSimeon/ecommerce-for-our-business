@@ -20,11 +20,11 @@ const  forHimData = [{
 const disneyData = [{
     image: 'img/disney/1.png',
     name: 'Rapunzel',
-    price: 949
+    price: 1599
 }, {
     image: 'img/disney/2.png',
     name: 'Moana',
-    price: 949
+    price: 1599
 }]
 
 const onePieceSetData = [{
