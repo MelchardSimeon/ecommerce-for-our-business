@@ -20,53 +20,53 @@ const  forHimData = [{
 const disneyData = [{
     image: 'img/disney/1.png',
     name: 'Rapunzel',
-    price: 1599
+    price: 999
 }, {
     image: 'img/disney/2.png',
     name: 'Moana',
-    price: 1599
+    price: 999
 }]
 
 const onePieceSetData = [{
     image: 'img/onepiece/1.png',
     name: 'Luffy Set',
-    price: 1299
+    price: 899
 }, {
     image: 'img/onepiece/2.png',
-    name: 'Zorro Set',
-    price: 1299
+    name: 'Zoro Set',
+    price: 899
 }, {
     image: 'img/onepiece/3.png',
     name: 'Sanji Set',
-    price: 1299
+    price: 899
 }, {
     image: 'img/onepiece/4.png',
     name: 'Nami Set',
-    price: 1049
+    price: 899
 }, {
     image: 'img/onepiece/5.png',
     name: 'Chopper Set',
-    price: 1099
+    price: 899
 }, {
     image: 'img/onepiece/6.png',
     name: 'Robin Set',
-    price: 1199
+    price: 899
 }, {
     image: 'img/onepiece/7.png',
     name: 'Brook Set',
-    price: 929
+    price: 899
 }, {
     image: 'img/onepiece/8.png',
     name: 'Franky Set',
-    price: 929
+    price: 899
 }, {
     image: 'img/onepiece/9.png',
     name: 'Jinbei Set',
-    price: 1099
+    price: 899
 }, {
     image: 'img/onepiece/10.png',
     name: 'Soge King Set',
-    price: 999
+    price: 899
 }]
 
 
